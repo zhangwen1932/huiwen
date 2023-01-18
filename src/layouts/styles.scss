@@ -1,0 +1,63 @@
+html,
+body,
+#root {
+  height: 100%;
+  // transition: all linear 0.3s;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Comfortaa;
+  background-color: #fff;
+  margin: 0;
+}
+
+ul,
+ol,
+p {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+input {
+  border: 0px;
+  background-color: none;
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+a {
+  text-decoration-line: none;
+  color: #2a2a2a;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}

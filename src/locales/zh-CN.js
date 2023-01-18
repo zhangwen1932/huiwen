@@ -1,6 +1,6 @@
 export default {
-  'home.nav.explore': '探索',
-  'home.nav.create': '创建',
-  'home.nav.order': '订单',
-  'welcome': '欢迎',
+  "nav.about": '关于汇文',
+  "nav.main": '主营业务',
+  "nav.team": '核心团队',
+  "nav.contact": '联系我们',
 };

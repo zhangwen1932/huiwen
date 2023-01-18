@@ -1,6 +1,7 @@
 import React from 'react';
 import { useIntl, NavLink, getLocale, setLocale } from 'umi';
-import { Button } from 'antd';
+
+// import { styles } from './styles.less';
 
 
 const intls = [
@@ -18,19 +19,24 @@ function Header() {
   const intl = useIntl();
   const navArray = [
     {
-      navTitle: intl.formatMessage({ id: 'home.nav.explore' }),
+      navTitle: intl.formatMessage({ id: 'nav.about' }),
       test: '/',
       key: 'home',
     },
     {
-      navTitle: intl.formatMessage({ id: 'home.nav.order' }),
-      test: '/order',
-      key: 'order',
+      navTitle: intl.formatMessage({ id: 'nav.main' }),
+      test: '/main',
+      key: 'main',
     },
     {
-      navTitle: intl.formatMessage({ id: 'home.nav.create' }),
-      test: 'create',
-      key: 'create',
+      navTitle: intl.formatMessage({ id: 'nav.team' }),
+      test: 'team',
+      key: 'team',
+    },
+    {
+      navTitle: intl.formatMessage({ id: 'nav.contact' }),
+      test: 'contact',
+      key: 'contact',
     },
   ];
 
@@ -56,13 +62,13 @@ function Header() {
             </div>
           </div>
           <div className="locale-box left-ele">
-            <Button
+            <button
               className="locale-btn"
               type="button"
               onClick={() => handleToggleLocale()}
             >
               {currentLocale.title}
-            </Button>
+            </button>
           </div>
         </div>
       </div>

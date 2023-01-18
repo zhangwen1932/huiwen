@@ -1,9 +1,7 @@
-import { FormattedMessage } from 'umi';
-
 const Home = () => {
   return(
     <div>
-      <FormattedMessage id="welcome" />
+      首页
     </div>
   )
 }

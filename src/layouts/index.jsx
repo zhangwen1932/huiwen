@@ -1,18 +1,17 @@
 import React from 'react';
 import { Outlet } from 'umi';
-import { Layout } from 'antd';
-import HeaderComponent from './Header';
-import FooterComponent from './Footer'
+import Header from './Header';
+import Footer from './Footer'
  
-import './styles.less';
+import './styles.scss';
 
 
 const LayoutComponent = () => (
-  <Layout>
-    <HeaderComponent />
+  <>
+    <Header />
     <Outlet />
-    <FooterComponent />
-  </Layout>
+    <Footer />
+  </>
 );
 
 export default LayoutComponent;

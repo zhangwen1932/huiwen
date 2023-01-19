@@ -1,9 +1,37 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Anchor, Row, Col } from "antd";
+import { Anchor, Col, Row } from "antd";
+import About from './components/About';
+import Banner from './components/Banner';
+import CoreCompetence from './components/CoreCompetence';
+import CooperativePartner from './components/CooperativePartner';
 
 import './styles.scss';
 
-const sectionObject = [{}]
+const sectionObject = [{
+  key: 'banner',
+  href: '#banner',
+  components: <Banner />,
+  id: 'banner',
+  title: 'Banner'
+}, {
+  key: 'about',
+  components: <About />,
+  href: '#about',
+  id: 'about',
+  title: '关于我们'
+},  {
+  key: 'coreCompetence',
+  components: <CoreCompetence />,
+  href: '#coreCompetence',
+  id: 'coreCompetence',
+  title: '核心能力'
+},  {
+  key: 'cooperativePartner',
+  components: <CooperativePartner />,
+  href: '#cooperativePartner',
+  id: 'cooperativePartner',
+  title: '合作伙伴'
+}]
 
 const Home = () => {
   const topRef = useRef(null);
@@ -12,21 +40,16 @@ const Home = () => {
     setTargetOffset(topRef.current?.clientHeight);
   })
   return(
-    <div>
+    <div className="container">
       <Row>
-        <Col span={24}>
-          <div
-            id="part-1"
-            style={{ height: '100vh', background: 'rgba(255,0,0,0.02)', }}
-          >
-            Part 1
-          </div>
-          <div id="part-2" style={{ height: '100vh', background: 'rgba(0,255,0,0.02)' }}>
-            Part 2
-          </div>
-          <div id="part-3" style={{ height: '100vh', background: 'rgba(0,0,255,0.02)' }}>
-            Part 3
-          </div>
+        <Col span={24} >
+          {sectionObject.map((item) => (
+            <section className="section-content" id={item.id} key={item.key}>
+              <div className="section-box">
+                {item.components}
+              </div>
+            </section>
+          ))}
         </Col>
       </Row>
       <div className='anchor-box'>
@@ -35,23 +58,7 @@ const Home = () => {
           affix={false}
           showInkInFixed={true}
           bounds={5}
-          items={[
-            {
-              key: 'part-1',
-              href: '#part-1',
-              title: `<div className="dotted" />`,
-            },
-            {
-              key: 'part-2',
-              href: '#part-2',
-              title: `<div className="dotted" />`,
-            },
-            {
-              key: 'part-3',
-              href: '#part-3',
-              title: `<div className="dotted" />`,
-            },
-          ]}
+          items={sectionObject}
         />
       </div>
     </div>

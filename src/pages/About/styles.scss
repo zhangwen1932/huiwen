@@ -1,3 +1,29 @@
+.section-content{
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  .section-box{
+    margin-top: 50px;
+    .title{
+      text-align: center;
+      font-size: 18px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: #010101;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    .divided{
+      width: 48px;
+      height: 1px;
+      background: #000000;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+}
+
 .anchor-box{
   position: fixed;
   right: 0;

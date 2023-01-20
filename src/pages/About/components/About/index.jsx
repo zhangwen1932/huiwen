@@ -1,4 +1,6 @@
+import { Row, Col } from 'antd';
 import { aboutText } from '../../static';
+import './styles.scss';
 
 const About = () => (
   <div className="about section-item">
@@ -8,27 +10,32 @@ const About = () => (
           {aboutText.title}
         </div>
         <div className="divided" />
-        <div className="about-list">
-          <ul>
+        <div className="about-desc width760">
+          <p>
+            {aboutText.desc}
+          </p>
+        </div>
+        <div className="about-list width760">
+          <Row>
             {aboutText.content.map((item) => (
-            <li key={item.id}>
-              <div>
-                <span className="list-number">
-                  {item.number}
-                </span>
-                <span className="list-unit">
-                  {item.unit}
-                </span>
-                <span>
-                  +
-                </span>
-              </div>
-              <p className="list-desc">
-                {item.desc}
-              </p>
-            </li>
-          ))}
-          </ul>
+              <Col span={8} key={item.id}>
+                <div className='list-item'>
+                  <span className="list-number">
+                    {item.number}
+                  </span>
+                  <span className="list-unit">
+                    {item.unit}
+                  </span>
+                  <span>
+                    +
+                  </span>
+                </div>
+                <div className="list-desc">
+                  {item.desc}
+                </div>
+              </Col>
+            ))}
+          </Row>
         </div>
       </div>
     </div>

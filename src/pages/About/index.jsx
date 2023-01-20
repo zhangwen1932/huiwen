@@ -5,8 +5,6 @@ import Banner from './components/Banner';
 import CoreCompetence from './components/CoreCompetence';
 import CooperativePartner from './components/CooperativePartner';
 
-import './styles.scss';
-
 const sectionObject = [{
   key: 'banner',
   href: '#banner',

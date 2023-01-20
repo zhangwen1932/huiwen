@@ -1,12 +1,15 @@
 .nav-container{
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
   .header-wrapper {
     height: 58px;
     line-height: 58px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 0 4%;
     .logo-box {
-      text-align: center;
       // margin: 0 auto;
       font-size: 18px;
       font-weight: 600;
@@ -22,8 +25,9 @@
           justify-content: flex-end;
           margin-left: auto;
           .nav-li{
-            margin-right: 40px;
+            margin-left: 40px;
             min-width: 58px;
+            text-align: right;
           }
         }
         a {

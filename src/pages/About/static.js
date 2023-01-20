@@ -34,21 +34,25 @@ export const coreCompetenceText = {
     {
       id: 1,
       title: '客观中立',
+      imgUrl: './images/coreCompetence/objective.svg',
       desc: '汇文咨询不隶属于任何海内外的金融机构，不代表任何在岸和离岸金融中心的政府机构。汇文咨询仅作为客户的内部顾问，助力客户家族茁壮成长。相比普通国内家族办公室，汇文咨询扮演了客户家族的“自家人”角色，对外保证客户家族的合规，独立性，对内仅提供专业意见，不参与决策。'
     }, 
     {
       id: 2,
       title: '利益冲突',
+      imgUrl: './images/coreCompetence/interest.svg',
       desc: '汇文咨询不售卖任何产品来获取报酬，因为这存在利益冲突的隐患。汇文咨询仅通过收取顾问费和管理费的模式实现可持续发展',
     },
     {
       id: 3,
       title: '安全保密',
+      imgUrl: './images/coreCompetence/safe.svg',
       desc: '职业道德和行业操守是汇文咨询的坚持，汇文咨询对服务的各个环节都会严格遵守当地和国际的法律法规。对客户的所有信息，都将根据最高标准的保密条例进行管理。',
     },
     {
       id: 4,
       title: '优化控制',
+      imgUrl: './images/coreCompetence/optimization.svg',
       desc: '汇文咨询作为客户的内部顾问，在信托层面通过治理架构帮助客户,合规制衡受托机构，在运作实体层面同样帮助客户合规有效的控制家族资产的运作。',
     },
   ]

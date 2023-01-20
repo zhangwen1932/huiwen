@@ -1,0 +1,34 @@
+.core-competence{
+  .core-list{
+    .list-item{
+      width: 246px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+      box-sizing: border-box;
+      .list-icon{
+        width: 42px;
+        height: 42px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 46px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .list-title{
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 23px;
+    }
+    .list-desc{
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+      color: #939393;
+    }
+  }
+}

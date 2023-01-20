@@ -44,7 +44,7 @@ const Home = () => {
       <Row>
         <Col span={24} >
           {sectionObject.map((item) => (
-            <section className="section-content" id={item.id} key={item.key}>
+            <section className="section-ele" id={item.id} key={item.key}>
               <div className="section-box">
                 {item.components}
               </div>

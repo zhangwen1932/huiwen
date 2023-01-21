@@ -12,6 +12,13 @@ const Correlation = () => (
         </div>
         <div className="divided" />
         <div className="correlation-list">
+          {correlationText.content.map((item) => (
+            <div className="list-item" key={item.id}>
+              <div className="list-img">
+                <img src={item.imgUrl} />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

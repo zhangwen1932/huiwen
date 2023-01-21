@@ -24,4 +24,16 @@ export const contactText = {
 
 export const correlationText = {
   title: '关联持牌机构',
+  content: [
+    {
+      imgUrl: './images/contact/pac.png',
+      id: 1,
+      intro: '南极星资本'
+    },
+    {
+      imgUrl: './images/contact/privium.png',
+      id: 2,
+      intro: 'Privium Fund management '
+    }
+  ]
 }

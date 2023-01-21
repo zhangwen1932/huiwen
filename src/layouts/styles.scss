@@ -74,13 +74,14 @@ a {
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
-  padding-top: 50px;
+  // padding-top: 50px;
   .section-box{
     width: 100%;
     height: 100%;
     .section-item{
       width: 100%;
       height: inherit;
+      padding-top: 50px;
     }
     .section-content{
       padding: 0 4%;

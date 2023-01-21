@@ -7,9 +7,18 @@ export const bannerText = {
 export const contactText = {
   title: '我们的联系方式-汇文咨询',
   content: {
-    phone: '+61 401308770',
-    email: 'info@wyvernadvisory.com', 
-    address: 'No. 13 Rawson Street, Rockdale NSW 2216',
+    phone: {
+      info: '+61 401308770',
+      imgUrl: './images/contact/phone.svg',
+    },
+    email: {
+      info: 'info@wyvernadvisory.com',
+      imgUrl: './images/contact/email.svg',
+    },
+    address: {
+      info: 'No. 13 Rawson Street, Rockdale NSW 2216',
+      imgUrl: './images/contact/address.svg',
+    }
   }
 }
 

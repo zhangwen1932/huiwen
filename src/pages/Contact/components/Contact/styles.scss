@@ -1,0 +1,28 @@
+.contact-section{
+  background-color: #FAFAFA;
+  height: 100vh;
+  .contact-list{
+    margin-top: 80px;
+    .list-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .list-img{
+        height: 12px;
+        width: 12px;
+        margin-right: 6px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .list-info{
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #757575;
+        line-height: 30px;
+      }
+    }
+  }
+}

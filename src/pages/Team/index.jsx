@@ -1,13 +1,20 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Anchor, Col, Row } from "antd";
 import Banner from './components/Banner';
+import TeamChild from './components/Team';
 
 const sectionObject = [{
   key: 'banner',
   href: '#banner',
   components: <Banner />,
   id: 'banner',
-  title: 'Banner'
+  title: 'Banner',
+}, {
+  key: 'team',
+  href: '#team',
+  components: <TeamChild />,
+  id: 'team',
+  title: 'Team',
 }]
 
 const Team = () => {

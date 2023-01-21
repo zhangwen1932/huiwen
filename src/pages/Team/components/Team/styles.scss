@@ -1,0 +1,23 @@
+.team-section{
+  .team-list{
+    margin-top: 86px;
+    .list-name{
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .list-position{
+      font-size: 12px;
+      color: #929292;
+      margin-top: 14px;
+    }
+    .list-divided{
+      width: 479px;
+      height: 1px;
+      background: #ECECEC;
+      margin-top: 20px;
+    }
+  }
+  .hidden{
+    display: none;
+  }
+}

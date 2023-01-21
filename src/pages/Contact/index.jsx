@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Anchor, Col, Row } from "antd";
 import Banner from './components/Banner';
+import ContactChild from './components/Contact';
+import Correlation from './components/Correlation';
 
 const sectionObject = [{
   key: 'banner',
@@ -8,6 +10,18 @@ const sectionObject = [{
   components: <Banner />,
   id: 'banner',
   title: 'Banner'
+}, {
+  key: 'contact',
+  href: '#contact',
+  components: <ContactChild />,
+  id: 'contact',
+  title: 'contact',
+}, {
+  key: 'correlation',
+  href: '#correlation',
+  components: <Correlation />,
+  id: 'correlation',
+  title: 'Correlation'
 }]
 
 const Contact = () => {

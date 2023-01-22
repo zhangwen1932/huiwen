@@ -52,22 +52,24 @@ export const trustText = {
 
 export const assetsText = {
   title: '资产管理类',
-  sub: [
-    '区别于传统资产管理机构，汇文咨询着重于客户对自己资产的“绝对把控”（需要突出）。 汇文咨询通过银行的基础设施，利用自身专业优势赋予其灵活性，让客户始终保持对整个资产管理流程的绝对控制和最终决策权。',
-    '澳大利亚牌照：Polaris Australis Capital Pty Ltd (AFSL:544133)'
-  ],
+  desc: '区别于传统资产管理机构，汇文咨询着重于客户对自己资产的“绝对把控”（需要突出）。 汇文咨询通过银行的基础设施，利用自身专业优势赋予其灵活性，让客户始终保持对整个资产管理流程的绝对控制和最终决策权。',
+  license: '澳大利亚牌照：Polaris Australis Capital Pty Ltd (AFSL:544133)',
   banner: [
     {
-      imgUrl: ''
+      imgUrl: './images/main/1.png',
+      id: 1,
     }, 
     {
-      imgUrl: ''
+      imgUrl: './images/main/2.png',
+      id: 2,
     },
     {
-      imgUrl: ''
+      imgUrl: './images/main/3.png',
+      id: 3,
     },
     {
-      imgUrl: ''
+      imgUrl: './images/main/4.png',
+      id: 4,
     },
   ]
 }

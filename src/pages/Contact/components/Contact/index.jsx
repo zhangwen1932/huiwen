@@ -3,15 +3,14 @@ import { contactText } from '../../static';
 import './styles.scss';
 
 const Contact = () => (
-  <div className="contact-section">
-    <div className="section-item">
+  <div className="section-item bg-gray">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {contactText.title}
         </div>
         <div className="divided" />
-        <div className="contact-list">
+        <div className="contact-content">
           <Row>
             <Col span={6} offset={6}>
               <div className="list-item">
@@ -42,7 +41,6 @@ const Contact = () => (
           </Row>
         </div>
       </div>
-    </div>
     </div>
   </div>
 )

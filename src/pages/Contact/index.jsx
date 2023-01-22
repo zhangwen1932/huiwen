@@ -36,9 +36,7 @@ const Contact = () => {
       <Col span={24} >
         {sectionObject.map((item) => (
           <section className="section-ele" id={item.id} key={item.key}>
-            <div className="section-box">
-              {item.components}
-            </div>
+            {item.components}
           </section>
         ))}
       </Col>

@@ -3,14 +3,14 @@ import { teamText } from '../../static';
 import './styles.scss';
 
 const Team = () => (
-  <div className="team-section section-item">
+  <div className="section-item">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {teamText.title}
         </div>
         <div className="divided" />
-        <div className="team-list">
+        <div className="team-content">
           <Row>
             {teamText.content.map((item) => (
               <Col span={12} key={item.id}>

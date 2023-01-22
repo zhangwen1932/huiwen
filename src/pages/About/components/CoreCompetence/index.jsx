@@ -3,14 +3,14 @@ import { coreCompetenceText } from '../../static';
 import './styles.scss';
 
 const CoreCompetence = () => (
-  <div className="core-competence section-item">
+  <div className="section-item">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {coreCompetenceText.title}
         </div>
         <div className="divided" />
-        <div className="core-list">
+        <div className="core-content">
           <Row>
             {coreCompetenceText.content.map((item) => (
               <Col span={6} key={item.id}>

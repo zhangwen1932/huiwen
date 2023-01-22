@@ -1,8 +1,5 @@
-.contact-section{
-  background-color: #FAFAFA;
-  height: 100vh;
-  .contact-list{
-    margin-top: 80px;
+.contact-content{
+  margin-top: 80px;
     .list-item{
       display: flex;
       align-items: center;
@@ -24,5 +21,4 @@
         line-height: 30px;
       }
     }
-  }
 }

@@ -1,14 +1,14 @@
 import { cooperativePartnerText } from '../../static';
 
 const CooperativePartner = () => (
-  <div className="cooperative-partner section-item">
+  <div className="section-item">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {cooperativePartnerText.title}
         </div>
         <div className="divided" />
-        <div className="partner-list">
+        <div className="partner-content width760">
           合作伙伴
         </div>
       </div>

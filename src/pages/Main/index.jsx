@@ -1,6 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Anchor, Col, Row } from "antd";
 import Banner from './components/Banner';
+import Trust from './components/Trust';
+import Third from './components/Third';
+import Consultation from './components/Consultation';
+import Governance from './components/Governance';
+import AssetsComponents from './components/AssetsComponents';
 
 const sectionObject = [{
   key: 'banner',
@@ -8,6 +13,36 @@ const sectionObject = [{
   components: <Banner />,
   id: 'banner',
   title: 'Banner'
+}, {
+  key: 'trust',
+  components: <Trust />,
+  href: '#trust',
+  id: 'trust',
+  title: '信托类'
+},  {
+  key: 'assets',
+  components: <AssetsComponents />,
+  href: '#assets',
+  id: 'assets',
+  title: '资产管理类'
+},  {
+  key: 'governance',
+  components: <Governance />,
+  href: '#governance',
+  id: 'governance',
+  title: '企业治理'
+}, {
+  key: 'consultation',
+  components: <Consultation />,
+  href: '#consultation',
+  id: 'consultation',
+  title: '资询类'
+}, {
+  key: 'third',
+  components: <Third />,
+  href: '#third',
+  id: 'third',
+  title: '第三方业务'
 }]
 
 const Main = () => {

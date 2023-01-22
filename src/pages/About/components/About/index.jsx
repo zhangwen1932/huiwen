@@ -3,19 +3,19 @@ import { aboutText } from '../../static';
 import './styles.scss';
 
 const About = () => (
-  <div className="about section-item">
+  <div className="section-item">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {aboutText.title}
         </div>
         <div className="divided" />
-        <div className="about-desc width760">
+        <div className="section-desc width760">
           <p>
             {aboutText.desc}
           </p>
         </div>
-        <div className="about-list width760">
+        <div className="about-content width760">
           <Row>
             {aboutText.content.map((item) => (
               <Col span={8} key={item.id}>

@@ -1,12 +1,24 @@
-import { Row, Col, Carousel } from 'antd';
+import { useRef } from 'react';
+import { Row, Col, Carousel, Button } from 'antd';
 import { assetsText } from '../../static';
 import { LeftOutlined, RightOutlined} from '@ant-design/icons';
 import './styles.scss';
 
 const Assets = () => {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
+  const carouselRef = useRef();
+  const handlePrev = () => {
+    console.log('hello')
+    console.log('carouselRef', carouselRef);
+    if(carouselRef.current){
+      carouselRef.current.prev();
+    }
+  }
+  const handleNext = () => {
+    console.log('carouselRef', carouselRef);
+    if(carouselRef.current){
+      carouselRef.current.next();
+    }
+  }
   return(
     <div className="section-item bg-gray">
       <div className="section-content">
@@ -26,15 +38,16 @@ const Assets = () => {
             </div>
             <div className="assets-list">
               <Row>
-                <Col span={1}>
-                  <div className="left-arrow">
+                <Col span={2}>
+                  <button type="button" className="left-arrow" onClick={handleNext}>
                     <LeftOutlined />
-                  </div>
+                  </button>
                 </Col>
-                <Col span={22}>
-                  <div style={{ width: '100%'}}>
+                <Col span={20}>
+                  {/* <div style={{ width: '100%'}}> */}
                     <Carousel
-                      afterChange={onChange}
+                      arrows={true}
+                      ref={carouselRef}
                     >
                       {assetsText.banner.map((item) => (
                         <div className="list-banner" key={item.id}>
@@ -42,12 +55,12 @@ const Assets = () => {
                         </div>
                       ))}
                     </Carousel>
-                  </div>
+                  {/* </div> */}
                 </Col>
-                <Col span={1}>
-                  <div className="right-arrow">
+                <Col span={2}>
+                  <button type="button" className="right-arrow" onClick={handlePrev}>
                     <RightOutlined />
-                  </div>
+                  </button>
                 </Col>
               </Row>
             </div>

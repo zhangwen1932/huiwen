@@ -15,6 +15,12 @@
        display: flex;
        align-items: center;
        height: 100%;
+       justify-content: center;
+       &:where(.css-dev-only-do-not-override-1i9hnpv).ant-btn-default {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: transparent;
+      }
     }
     .list-banner{
       width: 100%;
@@ -22,6 +28,28 @@
       img{
         width: 100%;
         height: 100%;
+      }
+    }
+    .ant-carousel .slick-dots li{
+      position: relative;
+      display: inline-block;
+      flex: 0 1 auto;
+      box-sizing: content-box;
+      width: 16px;
+      height: 16px;
+      margin-inline: 4px;
+      padding: 0;
+      text-align: center;
+      text-indent: -999px;
+      vertical-align: top;
+      transition: all 0.3s;
+      button{
+        width: 9px;
+        height: 9px;
+        background: #C42A26;
+        border-radius: 50%;
+
+
       }
     }
   }

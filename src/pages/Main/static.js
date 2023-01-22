@@ -9,35 +9,40 @@ export const trustText = {
   desc: '汇文咨询根据客户的长短期目标，结合信托成立地区的监管法规，为客户定制家族信托的整体架构并实施落地。整体架构的设计中，会涵盖客户家族的资产隔离，继承，受益人的法务和税务筹划等服务，主要涉及五个范畴：',
   content: [
     {
-      imgUrl: '',
-      content: [
+      imgUrl: './images/main/trust.svg',
+      id: 1,
+      elcontent: [
         '信托架构',
         '落地和运营',        
       ]
     },
     {
-      imgUrl: '',
-      content: [
+      imgUrl: './images/main/law.svg',
+      id: 2,
+      elcontent: [
         '法务税务',
         '规划',        
       ]
     },
     {
-      imgUrl: '',
-      content: [
+      imgUrl: './images/main/inherit.svg',
+      id: 3,
+      elcontent: [
         '继承规划',       
       ]
     },
     {
-      imgUrl: '',
-      content: [
+      imgUrl: './images/main/assets.svg',
+      id: 4,
+      elcontent: [
         '资产隔离',   
         '保全规划',    
       ]
     },
     {
-      imgUrl: '',
-      content: [
+      imgUrl: './images/main/contract.svg',
+      id: 5,
+      elcontent: [
         '信托契约',   
         '起草和审阅',    
       ]

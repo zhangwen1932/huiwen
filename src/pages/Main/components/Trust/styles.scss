@@ -1,0 +1,20 @@
+.trust-content{
+  margin-top: 47px;
+  .item-icon{
+    text-align: center;
+    img{
+      display: inline-block;
+      height: 37px;
+      width: 37px;
+    }
+  }
+  .item-desc{
+    margin-top: 30px;
+    p{
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: PingFang SC;
+    }
+  }
+}

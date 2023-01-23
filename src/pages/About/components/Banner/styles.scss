@@ -5,6 +5,7 @@
   background-size: cover;
   position: relative;
   z-index: 0;
+  animation: opactiyBg 2000ms linear 300ms 1 normal both;
   .banner-title{
     font-size: 30px;
     font-family: PingFang SC;
@@ -29,5 +30,14 @@
     opacity: 50%;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     z-index: -1;
+  }
+}
+
+@keyframes opactiyBg{
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 1;
   }
 }

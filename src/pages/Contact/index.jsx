@@ -25,11 +25,6 @@ const sectionObject = [{
 }]
 
 const Contact = () => {
-  const [ currentAnchor, setCurrentAnchor ] = useState('#banner');
-  const handleClick = (e, link) => {
-    setCurrentAnchor(link.href);
-  };
-  const getCurrentAnchor = () => currentAnchor;
   return(
     <div className="container">
     <Row>
@@ -43,10 +38,9 @@ const Contact = () => {
     </Row>
     <div className='anchor-box'>
     <Anchor
-        getCurrentAnchor={getCurrentAnchor}
-        onClick={handleClick}
-        items={sectionObject}
-      />
+      items={sectionObject}
+      offsetTop={58}
+    />
     </div>
   </div>
   )

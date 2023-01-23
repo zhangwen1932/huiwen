@@ -17,7 +17,10 @@
     "antd": "^5.0.0",
     "circletype": "^2.3.0",
     "classnames": "^2.3.2",
-    "react-countup": "^6.4.0"
+    "rc-queue-anim": "^2.0.0",
+    "react-countup": "^6.4.0",
+    "react-lazyload": "^3.2.0",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

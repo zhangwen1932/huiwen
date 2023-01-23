@@ -1,5 +1,6 @@
 import { Row, Col } from 'antd';
 import CountUp from 'react-countup';
+import LazyLoad from 'react-lazyload';
 import { aboutText } from '../../static';
 import './styles.scss';
 
@@ -22,13 +23,14 @@ const About = () => (
               <Col span={8} key={item.id}>
                 <div className='list-item'>
                   <span className="list-number">
-                    {/* {item.number} */}
-                    <CountUp
-                      start={0}
-                      end={item.number}
-                      duration={1}
-                      separator=","
-                    />
+                    <LazyLoad once>
+                      <CountUp
+                        start={0}
+                        end={item.number}
+                        duration={1}
+                        separator=","
+                      />
+                    </LazyLoad>
                   </span>
                   <span className="list-unit">
                     {item.unit}

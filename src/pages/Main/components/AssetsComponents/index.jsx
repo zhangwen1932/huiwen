@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Row, Col, Carousel, Button } from 'antd';
+import { Row, Col, Carousel } from 'antd';
 import { assetsText } from '../../static';
 import { LeftOutlined, RightOutlined} from '@ant-design/icons';
 import './styles.scss';
@@ -7,14 +7,11 @@ import './styles.scss';
 const Assets = () => {
   const carouselRef = useRef();
   const handlePrev = () => {
-    console.log('hello')
-    console.log('carouselRef', carouselRef);
     if(carouselRef.current){
       carouselRef.current.prev();
     }
   }
   const handleNext = () => {
-    console.log('carouselRef', carouselRef);
     if(carouselRef.current){
       carouselRef.current.next();
     }

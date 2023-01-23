@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { Anchor, Col, Row } from "antd";
 import About from './components/About';
 import Banner from './components/Banner';
 import CoreCompetence from './components/CoreCompetence';
 import CooperativePartner from './components/CooperativePartner';
+
 
 const sectionObject = [{
   key: 'banner',

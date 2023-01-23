@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl, NavLink, getLocale, setLocale } from 'umi';
+import { useIntl, NavLink, getLocale, setLocale,  SelectLang } from 'umi';
 
 import './styles.scss';
 
@@ -7,11 +7,11 @@ import './styles.scss';
 const intls = [
   {
     name: 'zh-CN',
-    title: '中文',
+    title: 'English',
   },
   {
     name: 'en-US',
-    title: 'English',
+    title: '中文',
   },
 ];
 
@@ -21,7 +21,7 @@ function Header() {
     {
       navTitle: intl.formatMessage({ id: 'nav.about' }),
       test: '/about',
-      key: 'home',
+      key: 'about',
     },
     {
       navTitle: intl.formatMessage({ id: 'nav.main' }),
@@ -43,7 +43,8 @@ function Header() {
 
   const handleToggleLocale = () => {
     const toggleLocale = intls.find((item) => item.name !== getLocale());
-    setLocale(toggleLocale.name);
+    // 后面的false代表的意思是切换时不刷新页面
+    setLocale(toggleLocale.name, false);
   };
   const currentLocale = intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
   return (
@@ -62,7 +63,7 @@ function Header() {
                   </NavLink>
                 </li>
               ))}
-              {/* <li key="locale" className="nav-li">
+              <li key="locale" className="nav-li">
                 <a
                   className="locale-btn"
                   type="button"
@@ -70,7 +71,7 @@ function Header() {
                 >
                   {currentLocale.title}
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

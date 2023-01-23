@@ -1,9 +1,10 @@
 import { Row, Col } from 'antd';
+import CountUp from 'react-countup';
 import { aboutText } from '../../static';
 import './styles.scss';
 
 const About = () => (
-  <div className="section-item">
+  <div className="section-item animate__animated animate__fadeInLeft">
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
@@ -21,7 +22,13 @@ const About = () => (
               <Col span={8} key={item.id}>
                 <div className='list-item'>
                   <span className="list-number">
-                    {item.number}
+                    {/* {item.number} */}
+                    <CountUp
+                      start={0}
+                      end={item.number}
+                      duration={1}
+                      separator=","
+                    />
                   </span>
                   <span className="list-unit">
                     {item.unit}

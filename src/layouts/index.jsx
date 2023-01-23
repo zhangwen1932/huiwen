@@ -1,9 +1,10 @@
 import React from 'react';
 import { Outlet } from 'umi';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Layout } from 'antd';
 import HeaderComponent from './Header';
 import FooterComponent from './Footer'
  
+import 'animate.css';
 import './styles.scss';
 
 const { Header, Content, Footer } = Layout;

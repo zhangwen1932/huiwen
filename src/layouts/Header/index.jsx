@@ -46,8 +46,8 @@ function Header() {
   };
   const currentLocale = intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
   return (
-    <section className='nav-container'>
-      <div className="header-wrapper">
+    <section className="nav-container">
+      <div className="header-wrapper section-padding">
         <div className="logo-box">汇文</div>
         <div className="header-right">
           <div className="nav-box">

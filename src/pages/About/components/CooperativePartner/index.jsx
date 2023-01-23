@@ -2,7 +2,7 @@ import { cooperativePartnerText } from '../../static';
 
 const CooperativePartner = () => (
   <div className="section-item">
-    <div className="section-content">
+    <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
           {cooperativePartnerText.title}

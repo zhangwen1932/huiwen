@@ -21,7 +21,7 @@ const Assets = () => {
   }
   return(
     <div className="section-item bg-gray">
-      <div className="section-content">
+      <div className="section-content section-padding">
         <div className="middle-value">
           <div className="title">
             {assetsText.title}

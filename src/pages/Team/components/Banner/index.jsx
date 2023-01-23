@@ -4,7 +4,7 @@ import './styles.scss';
 const Banner = () => (
   <div className="team-banner section-item">
     <div className="mask" />
-    <div className="section-content">
+    <div className="section-content section-padding">
       <div className="middle-value">
         <div className="banner-subTitle">
           {bannerText.subTitle}

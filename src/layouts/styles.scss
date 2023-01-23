@@ -68,6 +68,10 @@ a {
   margin: 0 auto;
 }
 
+.section-padding{
+  padding: 0 4%;
+}
+
 .section-ele{
   // height: 100vh;
   position: relative;
@@ -79,7 +83,6 @@ a {
     min-height: 100vh;
   }
   .section-content{
-    padding: 0 4%;
     display: flex;
     align-items: center;
     min-height: 100vh;

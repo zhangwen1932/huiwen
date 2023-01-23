@@ -10,8 +10,8 @@ const Consultation = () => {
   useEffect(() => {
     new CircleType(circleInstance.current).radius(250);
   }, []);
-  return (<div className="section-item">
-    <div className="section-content">
+  return (<div className="section-item bg-gray">
+    <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
           {consultationText.title}

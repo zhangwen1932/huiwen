@@ -5,7 +5,7 @@ import { aboutText } from '../../static';
 import './styles.scss';
 
 const About = () => (
-  <div className="section-item animate__animated animate__fadeInLeft">
+  <div className="section-item">
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">

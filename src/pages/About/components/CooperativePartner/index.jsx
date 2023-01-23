@@ -16,7 +16,9 @@ const CooperativePartner = () => (
             {cooperativePartnerText.content.map((item) => (
               <Col span={6} key={item.id}>
                 <div className="img-ele">
-                  <img src={item.imgUrl} alt="" style={{ width: `${item.width}`}}/>
+                  <a href={item.href} target="_blank" rel="noreferrer">
+                    <img src={item.imgUrl} alt="" style={{ width: `${item.width}`}}/>
+                  </a>
                 </div>
               </Col>
             ))}

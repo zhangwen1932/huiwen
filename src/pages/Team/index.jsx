@@ -18,12 +18,11 @@ const sectionObject = [{
 }]
 
 const Team = () => {
-  const topRef = useRef(null);
-  const [targetOffset, setTargetOffset] = useState(undefined);
-  useEffect(() => {
-    setTargetOffset(topRef.current?.clientHeight);
-  })
-  
+  const [ currentAnchor, setCurrentAnchor ] = useState('#banner');
+  const handleClick = (e, link) => {
+    setCurrentAnchor(link.href);
+  };
+  const getCurrentAnchor = () => currentAnchor;
   return(
     <div className="container">
     <Row>
@@ -36,11 +35,9 @@ const Team = () => {
       </Col>
     </Row>
     <div className='anchor-box'>
-      <Anchor
-        targetOffset={targetOffset}
-        affix={false}
-        showInkInFixed={true}
-        bounds={5}
+    <Anchor
+        getCurrentAnchor={getCurrentAnchor}
+        onClick={handleClick}
         items={sectionObject}
       />
     </div>

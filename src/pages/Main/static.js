@@ -79,6 +79,7 @@ export const governanceText = {
   desc: '汇文咨询深刻认识到家族信托管理是一个可持续发展的生态。需要有专业团队进行长期跟踪性服务，以便帮助客户进行对内对外的合规管理。内部有信托架构下实体的企业治理，内审，财务，风控管理等。外部有年度申报，定期和不定期的反洗钱治理和申报，税务，外审，合规申报等。汇文咨询通过专业团队确保客户在合规的情况下规避风险，平稳运行，提高效率，创造价值。主要包括以下服务范畴： ',
   content: [
     {
+      id: 1,
       title: '公司顶层',
       list: [
         '企业章程草案',
@@ -88,6 +89,7 @@ export const governanceText = {
       ]
     },
     {
+      id: 2,
       title: '政府监管机构',
       list: [
         '合规年审',
@@ -96,6 +98,7 @@ export const governanceText = {
       ]
     },
     {
+      id: 3,
       title: '公司基层',
       list: [
         '财务规划',
@@ -104,6 +107,7 @@ export const governanceText = {
       ]
     },
     {
+      id:4,
       title: '外部金融机构',
       list: [
         '反洗钱治理和申报',

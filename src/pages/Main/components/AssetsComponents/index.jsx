@@ -44,7 +44,6 @@ const Assets = () => {
                   </button>
                 </Col>
                 <Col span={20}>
-                  {/* <div style={{ width: '100%'}}> */}
                     <Carousel
                       arrows={true}
                       ref={carouselRef}
@@ -55,7 +54,6 @@ const Assets = () => {
                         </div>
                       ))}
                     </Carousel>
-                  {/* </div> */}
                 </Col>
                 <Col span={2}>
                   <button type="button" className="right-arrow" onClick={handlePrev}>

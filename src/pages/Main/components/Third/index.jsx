@@ -11,6 +11,11 @@ const Third = () => (
           {thirdText.title}
         </div>
         <div className="divided" />
+        <div className="section-desc width760">
+          <p>
+            {thirdText.desc}
+          </p>
+        </div>
         <div className="contact-list">
           列表
         </div>

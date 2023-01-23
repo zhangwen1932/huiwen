@@ -1,23 +1,64 @@
+/* eslint-disable react/no-unknown-property */
+import { useEffect, useRef } from 'react';
 import { Row, Col } from 'antd';
 import { consultationText } from '../../static';
+import CircleType from "circletype";
 import './styles.scss';
 
-const Consultation = () => (
-  <div className="contact-section">
-    <div className="section-item">
+const Consultation = () => {
+  const circleInstance = useRef();
+  useEffect(() => {
+    new CircleType(circleInstance.current).radius(250);
+  }, []);
+  return (<div className="section-item">
     <div className="section-content">
       <div className="middle-value">
         <div className="title">
           {consultationText.title}
         </div>
         <div className="divided" />
-        <div className="contact-list">
-          列表
+        <div className="section-desc width760">
+          <p>
+            {consultationText.desc}
+          </p>
+        </div>
+        <div className="consultation-content">
+          <div className="consultation-circle">
+            <div className="circle-text">
+              <div className="img-box">
+                <img src={consultationText.imgUrl} alt=""/>
+                <p>{consultationText.subTitle}</p>
+              </div>
+            </div>
+            <div className="circle-front">
+              <div className='circle'></div>
+            </div>
+            <div className="circle-middle">
+              <div className='circle'></div>
+            </div>
+            <div className="circle-end">
+              <div className='circle'></div>
+            </div>
+            <div className="circle-desc">
+              <div className='circle' ref={circleInstance}>
+                {consultationText.content.map((item, index)=> 
+                  <p key={index}>
+                    {item}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="circle-dotted">
+              <div className="dotted dotted-1"/>
+              <div className="dotted dotted-2" />
+              <div className="dotted dotted-3" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
-)
+)}
 
 export default Consultation;

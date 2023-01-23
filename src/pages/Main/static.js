@@ -120,7 +120,7 @@ export const governanceText = {
 export const consultationText = {
   title: '咨询类',
   subTitle: '资本市场',
-  imgUrl: '',
+  imgUrl: './images/main/architecture.png',
   desc: '汇文咨询通过尽职调查的方式帮助客户对其自行挖掘的投资项目做出判断，侧重于风险把控，可行性研究，现金流预测，估计模式建立，以及提前规划好未来上市的架构和路径。通过把控好当下，为客户的长期利益未雨绸缪。 ',
   content: [
     '一级市场运作，比如港股美股上市',

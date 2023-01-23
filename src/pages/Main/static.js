@@ -133,25 +133,32 @@ export const thirdText = {
   title: '第三方业务',
   desc: '客户家族运行所需要的服务范畴是全方位的，汇文咨询对于非主营业务的服务需求，将会转介绍给其他的第三方公司。或者，代表客户和其自行选择的第三方公司进行对接。',
   content: [{
-    imgUrl: '',
+    id: 1,
+    imgUrl: './images/main/thirdOverseas.svg',
     title: '境外物业'
   }, {
-    imgUrl: '',
+    id: 2,
+    imgUrl: './images/main/thirdMedical.svg',
     title: '医疗服务'
   }, {
-    imgUrl: '',
+    id: 3,
+    imgUrl: './images/main/thirdImmigrant.svg',
     title: '移民留学'
   }, {
-    imgUrl: '',
+    id: 4,
+    imgUrl: './images/main/thirdActive.svg',
     title: '活动策划'
   }, {
-    imgUrl: '',
+    id: 5,
+    imgUrl: './images/main/thirdEdu.svg',
     title: '教育实习'
   }, {
-    imgUrl: '',
+    id: 6,
+    imgUrl: './images/main/thirdDonate.svg',
     title: '慈善捐赠'
   }, {
-    imgUrl: '',
+    id: 7,
+    imgUrl: './images/main/thirdTravel.svg',
     title: '旅行管家'
   }]
 }

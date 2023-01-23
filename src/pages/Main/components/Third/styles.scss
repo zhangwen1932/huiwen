@@ -1,0 +1,29 @@
+.third-content{
+  margin-top: 53px;
+  .third-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .third-item{
+      width: 25%;
+      position: relative;
+      margin-bottom: 28px;
+      .item-box{
+        display: flex;
+        align-items: center;
+        width: 192px;
+        height: 60px;
+        background: #F9F9F9;
+        border-radius: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      .item-icon{
+        width: 32px;
+        height: 32px;
+        padding-left: 24px;
+        padding-right: 38px;
+      }
+    }
+  }
+}

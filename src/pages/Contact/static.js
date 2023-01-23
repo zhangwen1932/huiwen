@@ -27,11 +27,13 @@ export const correlationText = {
   content: [
     {
       imgUrl: './images/contact/pac.png',
+      footerImgUrl: './images/footer/pac.png',
       id: 1,
       intro: '南极星资本'
     },
     {
       imgUrl: './images/contact/privium.png',
+      footerImgUrl: './images/footer/privium.png',
       id: 2,
       intro: 'Privium Fund management '
     }

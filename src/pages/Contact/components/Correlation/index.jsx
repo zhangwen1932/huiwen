@@ -4,7 +4,7 @@ import './styles.scss';
 
 const Correlation = () => (
   <div className="section-item">
-    <div className="section-content">
+    <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
           {correlationText.title}

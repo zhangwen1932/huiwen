@@ -1,4 +1,66 @@
 .footer-wrapper{
   height: 222px;
   background-color: #191919;
+  box-sizing: border-box;
+  position: relative;
+  .footer-content{
+    padding: 37px 0 44px;
+    box-sizing: border-box;
+    height: inherit;
+    .logo{
+      height: 29px;
+      width: 79px;
+    }
+    .copyright{
+      font-size: 12px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: #525252;
+      line-height: 24px;
+    }
+    .other-info{
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      margin-top: 34px;
+      margin-bottom: 30px;
+      .contact-info{
+        display: flex;
+        .list-item{
+          display: flex;
+          align-items: center;
+          margin-right: 33px;
+          .list-img{
+            height: 12px;
+            width: 12px;
+            font-size: 0;
+            margin-right: 8px;
+            img{
+              height: 12px;
+              width: 12px;
+            }
+          }
+          .list-info{
+            color: #757575;
+            font-size: 12px;
+          }
+        }
+      }
+      .relative-info{
+        display: flex;
+        height: 30px;
+        align-items: center;
+        .relative-item{
+          height: 40px;
+          img{
+            height: 100%;
+          }
+          &:first-child{
+            height: 20px;
+            padding-right: 41px;
+          }
+        }
+      }
+    }
+  }
 }

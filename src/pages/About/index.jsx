@@ -10,25 +10,25 @@ const sectionObject = [{
   href: '#banner',
   components: <Banner />,
   id: 'banner',
-  title: 'Banner'
+  title: ''
 }, {
   key: 'about',
   components: <About />,
   href: '#about',
   id: 'about',
-  title: '关于我们'
+  title: ''
 },  {
   key: 'coreCompetence',
   components: <CoreCompetence />,
   href: '#coreCompetence',
   id: 'coreCompetence',
-  title: '核心能力'
+  title: ''
 },  {
   key: 'cooperativePartner',
   components: <CooperativePartner />,
   href: '#cooperativePartner',
   id: 'cooperativePartner',
-  title: '合作伙伴'
+  title: ''
 }]
 
 const Home = () => {

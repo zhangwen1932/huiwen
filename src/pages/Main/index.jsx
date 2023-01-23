@@ -12,42 +12,42 @@ const sectionObject = [{
   href: '#banner',
   components: <Banner />,
   id: 'banner',
-  title: 'Banner'
+  title: ''
 }, {
   key: 'trust',
   components: <Trust />,
   href: '#trust',
   id: 'trust',
-  title: '信托类'
+  title: ''
 },  {
   key: 'assets',
   components: <AssetsComponents />,
   href: '#assets',
   id: 'assets',
-  title: '资产管理类'
+  title: ''
 },  {
   key: 'governance',
   components: <Governance />,
   href: '#governance',
   id: 'governance',
-  title: '企业治理'
+  title: ''
 }, {
   key: 'consultation',
   components: <Consultation />,
   href: '#consultation',
   id: 'consultation',
-  title: '资询类'
+  title: ''
 }, {
   key: 'third',
   components: <Third />,
   href: '#third',
   id: 'third',
-  title: '第三方业务'
+  title: ''
 }]
 
 const Main = () => {
   const topRef = useRef(null);
-  const [targetOffset, setTargetOffset] = useState(undefined);
+  const [targetOffset, setTargetOffset] = useState(1000);
   useEffect(() => {
     setTargetOffset(topRef.current?.clientHeight);
   })

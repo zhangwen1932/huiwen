@@ -9,19 +9,19 @@ const sectionObject = [{
   href: '#banner',
   components: <Banner />,
   id: 'banner',
-  title: 'Banner'
+  title: ''
 }, {
   key: 'contact',
   href: '#contact',
   components: <ContactChild />,
   id: 'contact',
-  title: 'contact',
+  title: '',
 }, {
   key: 'correlation',
   href: '#correlation',
   components: <Correlation />,
   id: 'correlation',
-  title: 'Correlation'
+  title: ''
 }]
 
 const Contact = () => {

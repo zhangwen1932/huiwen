@@ -118,12 +118,40 @@ a {
   }
 }
 
-.anchor-box{
-  position: fixed;
-  right: 0;
-  top: 50%;
-}
-
 .bg-gray{
   background-color: #FAFAFA;
+}
+
+.anchor-box{
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  .ant-anchor-wrapper{
+    .ant-anchor{
+      .ant-anchor-ink{
+        display: none;
+      }
+      .ant-anchor-link{
+        a{
+          height: 30px;
+          &::after{
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #2a2a2a;
+            margin: 0 auto;
+          }
+        }
+      }
+      .ant-anchor-link-active{
+        a{
+          &::after{
+            background-color: #2a2a2a;
+          }
+        }
+      }
+    }
+  }
 }

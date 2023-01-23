@@ -8,13 +8,13 @@ const sectionObject = [{
   href: '#banner',
   components: <Banner />,
   id: 'banner',
-  title: 'Banner',
+  title: '',
 }, {
   key: 'team',
   href: '#team',
   components: <TeamChild />,
   id: 'team',
-  title: 'Team',
+  title: '',
 }]
 
 const Team = () => {
@@ -23,6 +23,7 @@ const Team = () => {
   useEffect(() => {
     setTargetOffset(topRef.current?.clientHeight);
   })
+  
   return(
     <div className="container">
     <Row>

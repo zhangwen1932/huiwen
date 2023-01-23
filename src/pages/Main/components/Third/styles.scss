@@ -17,12 +17,15 @@
         border-radius: 30px;
         margin: 0 auto;
         box-sizing: border-box;
-      }
-      .item-icon{
-        width: 32px;
-        height: 32px;
-        padding-left: 24px;
-        padding-right: 38px;
+        .item-icon{
+          width: 32px;
+          height: 32px;
+          padding-left: 24px;
+          padding-right: 38px;
+        }
+        &:hover{
+          border: 1px solid #C63632;
+        }
       }
     }
   }

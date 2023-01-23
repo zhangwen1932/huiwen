@@ -21,16 +21,15 @@ const About = () => (
           <Row>
             {aboutText.content.map((item) => (
               <Col span={8} key={item.id}>
+                <LazyLoad once>
                 <div className='list-item'>
                   <span className="list-number">
-                    <LazyLoad once>
-                      <CountUp
-                        start={0}
-                        end={item.number}
-                        duration={1}
-                        separator=","
-                      />
-                    </LazyLoad>
+                    <CountUp
+                      start={0}
+                      end={item.number}
+                      duration={1}
+                      separator=","
+                    />
                   </span>
                   <span className="list-unit">
                     {item.unit}
@@ -42,6 +41,7 @@ const About = () => (
                 <div className="list-desc">
                   {item.desc}
                 </div>
+                </LazyLoad>
               </Col>
             ))}
           </Row>

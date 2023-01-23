@@ -13,6 +13,13 @@
       font-size: 18px;
       font-weight: 600;
       width: 20%;
+      display: flex;
+      align-items: center;
+      img{
+        width: 72px;
+        height: 27px;
+        display: inline-block;
+      }
     }
     .header-right {
       width: 80%;

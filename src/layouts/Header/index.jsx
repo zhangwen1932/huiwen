@@ -49,7 +49,9 @@ function Header() {
   return (
     <section className="nav-container">
       <div className="header-wrapper section-padding">
-        <div className="logo-box">汇文</div>
+        <div className="logo-box">
+          <img src="./images/logo/blackLogo.svg" alt="logo"/>
+        </div>
         <div className="header-right">
           <div className="nav-box">
             <ul className="nav-ul">

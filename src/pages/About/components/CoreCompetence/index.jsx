@@ -3,7 +3,7 @@ import { coreCompetenceText } from '../../static';
 import './styles.scss';
 
 const CoreCompetence = () => (
-  <div className="section-item">
+  <div className="section-item bg-gray">
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">

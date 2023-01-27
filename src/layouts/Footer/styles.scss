@@ -32,6 +32,7 @@
           display: flex;
           align-items: center;
           margin-right: 33px;
+          height: 36px;
           .list-img{
             height: 12px;
             width: 12px;
@@ -62,6 +63,19 @@
             padding-right: 41px;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper{
+    height: fit-content;
+     .footer-content .other-info{
+      display: block;
+      .contact-info{
+        display: block;
+        margin-bottom: 20px;
       }
     }
   }

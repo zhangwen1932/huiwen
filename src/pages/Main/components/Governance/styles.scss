@@ -9,6 +9,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
+    margin: 0 auto;
     .governance-row{
       display: flex;
       width: 760px;
@@ -49,6 +50,29 @@
             border-radius: 50%;
             background-color: #939393;
             margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .governance-content{
+    .governance-list{
+      background-image: none;
+      width: auto;
+      .governance-row{
+        display: flex;
+        width: auto;
+        align-items: flex-start;
+        .row-ele{
+          width: 50%;
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child{
+            padding-left: 0;
           }
         }
       }

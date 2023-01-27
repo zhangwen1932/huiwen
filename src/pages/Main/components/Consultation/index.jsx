@@ -17,7 +17,7 @@ const Consultation = () => {
           {consultationText.title}
         </div>
         <div className="divided" />
-        <div className="section-desc width760">
+        <div className="section-desc">
           <p>
             {consultationText.desc}
           </p>
@@ -53,6 +53,15 @@ const Consultation = () => {
               <div className="dotted dotted-1"/>
               <div className="dotted dotted-2" />
               <div className="dotted dotted-3" />
+            </div>
+          </div>
+          <div className="consultation-circle-mobile">
+            <div className="circle-desc">
+              {consultationText.content.map((item, index)=> 
+                <p key={index}>
+                  {item}
+                </p>
+              )}
             </div>
           </div>
         </div>

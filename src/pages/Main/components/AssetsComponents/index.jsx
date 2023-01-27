@@ -24,7 +24,7 @@ const Assets = () => {
             {assetsText.title}
           </div>
           <div className="divided" />
-          <div className="section-desc width760">
+          <div className="section-desc">
             <p>
               {assetsText.desc}
             </p>

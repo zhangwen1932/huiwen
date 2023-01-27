@@ -4,7 +4,7 @@ body,
   // max-width: 1600px;
   height: 100%;
   font-family: PingFangSC, PingFangSC-Medium;
-  min-width: 1200px;
+  // min-width: 1200px;
 }
 
 canvas {
@@ -111,11 +111,12 @@ a {
       margin: 0 auto;
     }
     .section-desc{
-      margin-top: 30px;
       text-align: center;
       font-size: 12px;
       color: #939393;
       line-height: 22px;
+      max-width: 760px;
+      margin: 30px auto 0;
     }
   }
 }

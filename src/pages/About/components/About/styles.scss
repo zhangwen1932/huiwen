@@ -1,5 +1,7 @@
 .about-content{
-  margin-top: 53px;
+  margin: 53px auto 0;
+  max-width: 760px;
+
   .list-item{
     text-align: center;
     color: #C42A26;
@@ -16,5 +18,15 @@
     text-align: center;
     font-size: 12px;
     color: #939393;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-content{  
+    .list-item{
+      .list-number{
+        font-size: 28px;
+      }
+    }
   }
 }

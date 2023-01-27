@@ -12,12 +12,12 @@ const About = () => (
           {aboutText.title}
         </div>
         <div className="divided" />
-        <div className="section-desc width760">
+        <div className="section-desc">
           <p>
             {aboutText.desc}
           </p>
         </div>
-        <div className="about-content width760">
+        <div className="about-content">
           <Row>
             {aboutText.content.map((item) => (
               <Col span={8} key={item.id}>

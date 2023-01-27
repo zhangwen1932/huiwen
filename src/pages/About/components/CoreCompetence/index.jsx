@@ -11,9 +11,9 @@ const CoreCompetence = () => (
         </div>
         <div className="divided" />
         <div className="core-content">
-          <Row>
+          <Row wrap={true}>
             {coreCompetenceText.content.map((item) => (
-              <Col span={6} key={item.id}>
+              <Col xl={6} md={12} sm={12} xs={24} key={item.id}>
                 <div className="list-item">
                   <div className="list-icon">
                     <img src={item.imgUrl} alt="" />

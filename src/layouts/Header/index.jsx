@@ -1,5 +1,7 @@
-import React from 'react';
-import { useIntl, NavLink, getLocale, setLocale,  SelectLang } from 'umi';
+import React, { useState } from 'react';
+import { useIntl, NavLink, getLocale, setLocale } from 'umi';
+import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import classnames from 'classnames';
 
 import './styles.scss';
 
@@ -17,6 +19,7 @@ const intls = [
 
 function Header() {
   const intl = useIntl();
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navArray = [
     {
       navTitle: intl.formatMessage({ id: 'nav.about' }),
@@ -47,6 +50,21 @@ function Header() {
     setLocale(toggleLocale.name, false);
   };
   const currentLocale = intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
+
+  const handleShowMobileMenu = (e) => {
+    setShowMobileMenu(!showMobileMenu);
+    if (!showMobileMenu) {
+      e.stopPropagation();
+      document.addEventListener('click', () => setShowMobileMenu(false), false);
+      document.addEventListener('tap', () => setShowMobileMenu(false), false);
+      document.addEventListener(
+        'mousewheel',
+        () => setShowMobileMenu(false),
+        false,
+      );
+    }
+  };
+
   return (
     <section className="nav-container">
       <div className="header-wrapper section-padding">
@@ -74,6 +92,35 @@ function Header() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className={classnames('mobile-list', !showMobileMenu && "hidden")}>
+          <div className="nav-box">
+            <ul className="nav-ul">
+              {navArray.map((item) => (
+                <li key={item.key} className="nav-li">
+                  <NavLink className="nav-ele" to={item.test}>
+                    {item.navTitle}
+                  </NavLink>
+                </li>
+              ))}
+                <li key="locale" className="nav-li">
+                  <a
+                    className="locale-btn"
+                    type="button"
+                    onClick={handleToggleLocale}
+                  >
+                    {currentLocale.title}
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div className="mobile-icon" onClick={(e) => handleShowMobileMenu(e)}>
+          {!showMobileMenu ? (
+            <MenuOutlined />
+          ) : (
+            <CloseOutlined />
+          )}
         </div>
       </div>
     </section>

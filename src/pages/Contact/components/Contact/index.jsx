@@ -11,8 +11,8 @@ const Contact = () => (
         </div>
         <div className="divided" />
         <div className="contact-content">
-          <Row>
-            <Col span={6} offset={6}>
+          <Row justify="center" align="middle" wrap={true}>
+            <Col sm={12} xs={24}>
               <div className="list-item">
                 <div className="list-img">
                   <img src={contactText.content.phone.imgUrl} alt="" />
@@ -20,7 +20,7 @@ const Contact = () => (
                 <div className="list-info">{contactText.content.phone.info}</div>
               </div>
             </Col>
-            <Col span={6}>
+            <Col sm={12} xs={24}>
               <div className="list-item">
                 <div className="list-img">
                   <img src={contactText.content.email.imgUrl} alt="" />
@@ -28,10 +28,8 @@ const Contact = () => (
                 <div className="list-info">{contactText.content.email.info}</div>
               </div>
             </Col>
-          </Row>
-          <Row>
-            <Col span={12} offset={6}>
-              <div className="list-item" style={{ marginTop: '33px'}}>
+            <Col sm={12} xs={24}>
+              <div className="list-item">
                 <div className="list-img">
                   <img src={contactText.content.address.imgUrl} alt="" />
                 </div>

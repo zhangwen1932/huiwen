@@ -1,11 +1,32 @@
 .banner{
-  background-image: url('@/assets/banner/about_banner.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 0;
   animation: opactiyBg 2000ms linear 300ms 1 normal both;
+  overflow: hidden;
+  .bg{
+    background-image: url('@/assets/banner/about_banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    animation: opactiyBg1 2000ms linear 300ms 1 normal both;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #000000;
+      opacity: 50%;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      z-index: 2;
+    }
+  }
   .banner-title{
     font-size: 30px;
     font-family: PingFang SC;
@@ -20,17 +41,6 @@
     font-weight: 500;
     color: #FFFFFF;
   }
-  .mask{
-    display: block;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    opacity: 50%;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    z-index: -1;
-  }
 }
 
 @keyframes opactiyBg{
@@ -39,5 +49,14 @@
   }
   50%{
     opacity: 1;
+  }
+}
+
+@keyframes opactiyBg1{
+  0%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(1);
   }
 }

@@ -93,7 +93,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className={classnames('mobile-list', !showMobileMenu && "hidden")}>
+        {/* <div className={classnames('mobile-list', !showMobileMenu && "hidden")}>
           <div className="nav-box">
             <ul className="nav-ul">
               {navArray.map((item) => (
@@ -121,7 +121,7 @@ function Header() {
           ) : (
             <CloseOutlined />
           )}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ const Team = () => {
         <div className="team-content">
           <Row>
             {teamText.content.map((item) => (
-              <Col xl={12} md={12} sm={24} xs={24} key={item.id}>
+              <Col xl={12} md={24} sm={24} xs={24} key={item.id}>
                 <Intro {...item}/>
               </Col>
             ))}

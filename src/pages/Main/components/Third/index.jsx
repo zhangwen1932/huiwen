@@ -19,7 +19,7 @@ const Third = () => (
           <div className="third-list">
             <Row justify="center" align="middle" wrap={true}>
               {thirdText.content.map((item) => (
-              <Col className="third-list" xl={4} lg={6} md={6} sm={12} xs={12} key={item.id}>
+              <Col className="third-list" md={6} sm={12} xs={12} key={item.id}>
                 <div className="third-item">
                   <div className="item-box">
                     <div className="item-icon">

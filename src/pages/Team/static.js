@@ -1,7 +1,8 @@
 export const bannerText = {
-  title: '华人背景中最早以专业服务为核心的家族办公室之一',
-  subTitle: '我们的团队',
-  desc: '核心团队均毕业于海内外一流名校且具备行业认证，包括但不限于律师，注册会计师和特许金融分析师。',
+  title: 'team.banner.title',
+  subTitle: 'team.banner.subTitle',
+  desc: 'team.banner.desc',
+  bg: './images/banner/team.jpg',
 }
 
 export const teamText = {

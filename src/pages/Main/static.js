@@ -2,6 +2,7 @@ export const bannerText = {
   title: '有自营，有委任',
   subTitle: '主营业务',
   desc: '把握核心业务，也可以代表客户接受委任提供全方位的服务',
+  bg: './images/banner/main.jpg',
 }
 
 export const trustText = {

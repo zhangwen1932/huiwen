@@ -1,6 +1,7 @@
 export const bannerText = {
   title: '汇文咨询',
-  subTitle: '赋能全球高净值人士'
+  subTitle: '赋能全球高净值人士',
+  bg: './images/banner/about.jpg',
 }
 
 export const aboutText = {

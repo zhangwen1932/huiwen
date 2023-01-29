@@ -3,7 +3,7 @@ import './styles.scss';
 
 const Banner = () => (
   <div className="main-banner section-item">
-    <div className="bg" />
+    <div className="bg" style={{ backgroundImage: `url(${bannerText.bg})`}}/>
     <div className="section-content section-padding">
       <div className="middle-value animate__animated animate__fadeInLeft">
         <div className="banner-subTitle">

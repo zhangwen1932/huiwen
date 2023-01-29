@@ -31,7 +31,11 @@ const Assets = () => {
           </div>
           <div className="assets-content">
             <div className="assets-license">
-              <p>{assetsText.license}</p>
+              {
+                assetsText.license.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))
+              }
             </div>
             <div className="assets-list">
               <Row>

@@ -5,7 +5,7 @@ export const bannerText = {
 }
 
 export const contactText = {
-  title: '我们的联系方式-汇文咨询',
+  title: '联系方式-汇文咨询',
   content: {
     phone: {
       info: '+61 401308770',

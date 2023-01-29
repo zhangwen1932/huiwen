@@ -52,8 +52,12 @@ export const trustText = {
 
 export const assetsText = {
   title: '资产管理类',
-  desc: '区别于传统资产管理机构，汇文咨询着重于客户对自己资产的“绝对把控”（需要突出）。 汇文咨询通过银行的基础设施，利用自身专业优势赋予其灵活性，让客户始终保持对整个资产管理流程的绝对控制和最终决策权。',
-  license: '澳大利亚牌照：Polaris Australis Capital Pty Ltd (AFSL:544133)',
+  desc: '汇文咨询目前在澳大利亚和新加坡持有金融牌照，中国地区的金融牌照也在筹备中。通过这些牌照赋能客户享受金融行业的同业待遇，满足监管方面的合规要求，以及最大程度地助力客户保持对资产管理的控制权和决策权。',
+  license: [
+    '澳大利亚牌照：Polaris Australis Capital Pty Ltd (AFSL:544133)',
+    '新加坡牌照：和Privium Fund Management合作',
+    '中国牌照：南极星私募股权投资有限合伙(筹备中)'
+  ],
   banner: [
     {
       imgUrl: './images/main/1.png',
@@ -102,7 +106,7 @@ export const governanceText = {
       title: '公司基层',
       list: [
         '财务规划',
-        '税务规划',
+        '税务筹划',
         '公司内审',
       ]
     },
@@ -121,7 +125,7 @@ export const consultationText = {
   title: '咨询类',
   subTitle: '资本市场',
   imgUrl: './images/main/architecture.png',
-  desc: '汇文咨询通过尽职调查的方式帮助客户对其自行挖掘的投资项目做出判断，侧重于风险把控，可行性研究，现金流预测，估计模式建立，以及提前规划好未来上市的架构和路径。通过把控好当下，为客户的长期利益未雨绸缪。 ',
+  desc: '汇文咨询通过尽职调查的方式帮助客户对其自行挖掘的投资项目做出判断，侧重于风险把控，可行性研究，现金流预测，估值模型建立，以及提前规划好未来上市的架构和路径。通过把控好当下，为客户的长期利益未雨绸缪。 ',
   content: [
     '一级市场运作，比如港股美股上市',
     '二级市场运作，IPO股基石投资人',

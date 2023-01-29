@@ -29,7 +29,7 @@ export const aboutText = {
 }
 
 export const coreCompetenceText = {
-  title: '汇文咨询的4个核心能力',
+  title: '汇文咨询四大核心能力',
   content: [
     {
       id: 1,
@@ -41,13 +41,13 @@ export const coreCompetenceText = {
       id: 2,
       title: '利益冲突',
       imgUrl: './images/coreCompetence/interest.svg',
-      desc: '汇文咨询不售卖任何产品来获取报酬，因为这存在利益冲突的隐患。汇文咨询仅通过收取顾问费和管理费的模式实现可持续发展',
+      desc: '汇文咨询不售卖任何产品来获取报酬，防止存在利益冲突的隐患。汇文咨询仅通过收取顾问费和管理费的模式实现可持续发展',
     },
     {
       id: 3,
       title: '安全保密',
       imgUrl: './images/coreCompetence/safe.svg',
-      desc: '职业道德和行业操守是汇文咨询的坚持，汇文咨询对服务的各个环节都会严格遵守当地和国际的法律法规。对客户的所有信息，都将根据最高标准的保密条例进行管理。',
+      desc: '职业道德和行业操守是汇文咨询的坚持，汇文咨询把控服务的各个环节并严格遵守当地和国际的法律法规。根据最高标准的保密条例对客户的所有信息进行严格管理。',
     },
     {
       id: 4,

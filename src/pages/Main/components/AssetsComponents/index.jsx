@@ -46,7 +46,7 @@ const Assets = () => {
                 </Col>
                 <Col span={20}>
                     <Carousel
-                      arrows={true}
+                      autoplay={true}
                       ref={carouselRef}
                     >
                       {assetsText.banner.map((item) => (

@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useRef } from 'react';
-import { Row, Col } from 'antd';
 import { consultationText } from '../../static';
 import CircleType from "circletype";
 import './styles.scss';

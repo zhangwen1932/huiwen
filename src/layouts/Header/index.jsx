@@ -65,6 +65,32 @@ function Header() {
     }
   };
 
+  const renderNav = () => {
+    return(
+      <div className="nav-box">
+        <ul className="nav-ul">
+          {navArray.map((item) => (
+            <li key={item.key} className="nav-li">
+              <NavLink className="nav-ele" to={item.test}>
+                {item.navTitle}
+              </NavLink>
+            </li>
+          ))}
+          {/* <li key="locale" className="nav-li">
+            <a
+              className="locale-btn"
+              type="button"
+              onClick={handleToggleLocale}
+            >
+              {currentLocale.title}
+            </a>
+          </li> */}
+      </ul>
+    </div>
+    )
+  }
+  
+
   return (
     <section className="nav-container">
       <div className="header-wrapper section-padding">
@@ -72,48 +98,10 @@ function Header() {
           <img src="./images/logo/blackLogo.svg" alt="logo"/>
         </div>
         <div className="header-right">
-          <div className="nav-box">
-            <ul className="nav-ul">
-              {navArray.map((item) => (
-                <li key={item.key} className="nav-li">
-                  <NavLink className="nav-ele" to={item.test}>
-                    {item.navTitle}
-                  </NavLink>
-                </li>
-              ))}
-              {/* <li key="locale" className="nav-li">
-                <a
-                  className="locale-btn"
-                  type="button"
-                  onClick={handleToggleLocale}
-                >
-                  {currentLocale.title}
-                </a>
-              </li> */}
-            </ul>
-          </div>
+          {renderNav()}
         </div>
         <div className={classnames('mobile-list', !showMobileMenu && "hidden")}>
-          <div className="nav-box">
-            <ul className="nav-ul">
-              {navArray.map((item) => (
-                <li key={item.key} className="nav-li">
-                  <NavLink className="nav-ele" to={item.test}>
-                    {item.navTitle}
-                  </NavLink>
-                </li>
-              ))}
-                {/* <li key="locale" className="nav-li">
-                  <a
-                    className="locale-btn"
-                    type="button"
-                    onClick={handleToggleLocale}
-                  >
-                    {currentLocale.title}
-                  </a>
-                </li> */}
-            </ul>
-          </div>
+          {renderNav()}
         </div>
         <div className="mobile-icon" onClick={(e) => handleShowMobileMenu(e)}>
           {!showMobileMenu ? (

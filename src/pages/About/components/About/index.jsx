@@ -1,6 +1,7 @@
 import { Row, Col } from 'antd';
 import CountUp from 'react-countup';
 import LazyLoad from 'react-lazyload';
+import { FormattedMessage } from 'umi';
 import { aboutText } from '../../static';
 import './styles.scss';
 
@@ -9,12 +10,12 @@ const About = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {aboutText.title}
+          <FormattedMessage id={aboutText.title} />
         </div>
         <div className="divided" />
         <div className="section-desc">
           <p>
-            {aboutText.desc}
+            <FormattedMessage id={aboutText.desc} />
           </p>
         </div>
         <div className="about-content">
@@ -32,14 +33,14 @@ const About = () => (
                     />
                   </span>
                   <span className="list-unit">
-                    {item.unit}
+                    <FormattedMessage id={item.unit} />
                   </span>
                   <span>
                     +
                   </span>
                 </div>
                 <div className="list-desc">
-                  {item.desc}
+                  <FormattedMessage id={item.desc} />
                 </div>
                 </LazyLoad>
               </Col>

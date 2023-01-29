@@ -1,29 +1,29 @@
 export const bannerText = {
-  title: '汇文咨询',
-  subTitle: '赋能全球高净值人士',
+  title: "about.banner.title",
+  subTitle: "about.banner.subTitle",
   bg: './images/banner/about.jpg',
 }
 
 export const aboutText = {
-  title: '关于汇文咨询',
-  desc: '汇文咨询成立于澳大利亚悉尼，是一家致力于为全球高净值人士提供定制化管理方案的专业家族办公室。区别于国内家办理念，汇文咨询为客户提供法律，税务，金融领域的管家一站式服务，秉持“一切以客户利益为优先”的原则，与境内外知名律所，会计师事务所，投资银行，私人银行以及信托公司形成核心体系，为客户的长期利益考虑，陪伴客户家族的茁壮成长。',
+  title: "about.about.title",
+  desc: "about.about.desc",
   content: [
     {
       number: 10,
-      unit: '年',
-      desc: '平均专业行业经验',
+      unit: "about.about.id1.unit",
+      desc: "about.about.id1.desc",
       id: 1,
     },
     {
       number: 15,
-      unit: '人',
-      desc: '专业团队成员',
+      unit: "about.about.id2.unit",
+      desc: "about.about.id2.desc",
       id: 2,
     },
     {
       number: 50,
-      unit: '亿',
-      desc: '资产管理规模',
+      unit: "about.about.id3.unit",
+      desc: "about.about.id3.desc",
       id: 3,
     },
   ]

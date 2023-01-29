@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd';
+import { FormattedMessage } from 'umi';
 import Intro from './Intro';
 import { teamText } from '../../static';
 
@@ -11,7 +12,7 @@ const Team = () => {
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {teamText.title}
+          <FormattedMessage id={teamText.title} />
         </div>
         <div className="divided" />
         <div className="team-content">

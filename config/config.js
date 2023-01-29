@@ -17,6 +17,7 @@ export default defineConfig({
   },
   routes,
   npmClient: 'yarn',
-  title: '汇文'
+  title: '汇文',
+  hash: true,
 });
 

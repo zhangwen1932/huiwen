@@ -93,4 +93,5 @@ export default {
   'contact.banner.desc.v2': '构筑保护壁垒应对全生命周期的诸多挑战',
   'contact.contact.title': '联系方式-汇文咨询',
   'contact.correlation.title': '关联持牌机构',
+  'footer.copyRight': 'Copyright © 2022 汇文咨询管理有限公司 版权所有',
 };

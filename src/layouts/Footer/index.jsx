@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'umi';
 import { footerText } from '../static'; 
 import { contactText, correlationText } from '../../pages/Contact/static';
 import './styles.scss';
@@ -41,7 +42,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="copyright">
-            {footerText.copyRight}
+            <FormattedMessage id={footerText.copyRight} />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { Row, Col } from 'antd';
 import CountUp from 'react-countup';
 import LazyLoad from 'react-lazyload';
-import { FormattedMessage } from 'umi';
+import { FormattedMessage, getLocale } from 'umi';
 import { aboutText } from '../../static';
 import './styles.scss';
 
@@ -25,7 +25,7 @@ const About = () => (
                   <span className="list-number">
                     <CountUp
                       start={0}
-                      end={item.number}
+                      end={getLocale() ==='zh-CN' ? item.number : item.numberEn}
                       duration={1}
                       separator=","
                     />

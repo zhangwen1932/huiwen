@@ -10,18 +10,21 @@ export const aboutText = {
   content: [
     {
       number: 10,
+      numberEn: 10,
       unit: "about.about.id1.unit",
       desc: ["about.about.id1.desc.v1", "about.about.id1.desc.v2"],
       id: 1,
     },
     {
       number: 15,
+      numberEn: 15,
       unit: "about.about.id2.unit",
       desc: ["about.about.id2.desc.v1"],
       id: 2,
     },
     {
       number: 50,
+      numberEn: 5,
       unit: "about.about.id3.unit",
       desc: ["about.about.id3.desc.v1"],
       id: 3,

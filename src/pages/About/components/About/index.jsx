@@ -14,9 +14,7 @@ const About = () => (
         </div>
         <div className="divided" />
         <div className="section-desc">
-          <p>
-            <FormattedMessage id={aboutText.desc} />
-          </p>
+          <FormattedMessage id={aboutText.desc} />
         </div>
         <div className="about-content">
           <Row>
@@ -40,7 +38,11 @@ const About = () => (
                   </span>
                 </div>
                 <div className="list-desc">
-                  <FormattedMessage id={item.desc} />
+                  {item.desc.map((ele, index) => (
+                    <p key={index}>
+                      <FormattedMessage id={ele} />
+                    </p>
+                  ))}
                 </div>
                 </LazyLoad>
               </Col>

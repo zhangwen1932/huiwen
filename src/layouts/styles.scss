@@ -104,6 +104,8 @@ main{
     z-index: 3;
     .middle-value{
       width: 100%;
+      box-sizing: border-box;
+      padding: 24px;
     }
     .title{
       text-align: center;

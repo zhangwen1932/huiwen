@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { Anchor, Col, Row } from "antd";
 import Banner from './components/Banner';
 import ContactChild from './components/Contact';

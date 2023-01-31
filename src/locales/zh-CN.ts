@@ -87,4 +87,9 @@ export default {
   "team.team.shang.position": '联合创始人/执行董事',
   "team.team.shang.positionSub": '新南威尔士大学商业学士',
   "team.team.shang.desc": '多年金融科技行业和服务高净值客户的经验。先后任职于金融科技公司，地产投资公司和民服务公司，擅长金融科技，新兴资产管理和地产投资。',
+  "contact.banner.title": '联系我们',
+  'contact.banner.desc.v1': '致力于为客户的家族实现代际传承、家族兴旺、基业长青。',
+  'contact.banner.desc.v2': '构筑保护壁垒应对全生命周期的诸多挑战',
+  'contact.contact.title': '联系方式-汇文咨询',
+  'contact.correlation.title': '关联持牌机构',
 };

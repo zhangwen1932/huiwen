@@ -1,11 +1,11 @@
 export const bannerText = {
-  title: '联系我们',
-  desc: ['致力于为客户的家族实现代际传承、家族兴旺、基业长青。','构筑保护壁垒应对全生命周期的诸多挑战'],
+  title: 'contact.banner.title',
+  desc: ['contact.banner.desc.v1','contact.banner.desc.v2'],
   bg: './images/banner/contact.jpg',
 }
 
 export const contactText = {
-  title: '联系方式-汇文咨询',
+  title: 'contact.contact.title',
   content: {
     phone: {
       info: '+61 401308770',
@@ -23,7 +23,7 @@ export const contactText = {
 }
 
 export const correlationText = {
-  title: '关联持牌机构',
+  title: 'contact.correlation.title',
   content: [
     {
       imgUrl: './images/contact/pac.png',

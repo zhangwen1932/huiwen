@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd';
+import { FormattedMessage } from 'umi';
 import { contactText } from '../../static';
 import './styles.scss';
 
@@ -7,7 +8,7 @@ const Contact = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {contactText.title}
+          <FormattedMessage id={contactText.title} />
         </div>
         <div className="divided" />
         <div className="contact-content">
@@ -17,7 +18,9 @@ const Contact = () => (
                 <div className="list-img">
                   <img src={contactText.content.phone.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.phone.info}</div>
+                <div className="list-info">
+                  {contactText.content.phone.info}
+                </div>
               </div>
             </Col>
             <Col sm={12} xs={24}>

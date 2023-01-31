@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd';
+import { FormattedMessage } from 'umi';
 import { correlationText } from '../../static';
 import './styles.scss';
 
@@ -7,7 +7,7 @@ const Correlation = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {correlationText.title}
+          <FormattedMessage id={correlationText.title} />
         </div>
         <div className="divided" />
         <div className="correlation-content">

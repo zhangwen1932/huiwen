@@ -67,12 +67,12 @@ export const cooperativePartnerText = {
       href: 'https://www.intertrustgroup.com/',
       imgUrl: './images/parnter/intertrustLogo.png',
       id: 1,
-      width: '81px',
+      width: '150px',
     },
     {
       name: 'EY 官网',
       href: 'https://www.ey.com/',
-      imgUrl: './images/parnter/eyLogo.png',
+      imgUrl: './images/parnter/eyLogo.svg',
       id: 2,
       width: '110px'
     },
@@ -86,7 +86,7 @@ export const cooperativePartnerText = {
     {
       name: 'HFW',
       href: 'https://www.hfw.com/Home',
-      imgUrl: './images/parnter/hfwLogo.png',
+      imgUrl: './images/parnter/hfwLogo.svg',
       id: 4,
       width: '68px'
     },
@@ -114,7 +114,7 @@ export const cooperativePartnerText = {
     {
       name: 'CIMB新加坡分行',
       href: 'https://www.cimb.com.sg/en/personal/home.html',
-      imgUrl: './images/parnter/cimbLogo.png',
+      imgUrl: './images/parnter/cimbLogo.svg',
       id: 8,
       width: '100px'
     }

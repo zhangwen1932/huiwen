@@ -76,7 +76,7 @@ function Header() {
               </NavLink>
             </li>
           ))}
-          {/* <li key="locale" className="nav-li">
+          <li key="locale" className="nav-li">
             <a
               className="locale-btn"
               type="button"
@@ -84,7 +84,7 @@ function Header() {
             >
               {currentLocale.title}
             </a>
-          </li> */}
+          </li>
       </ul>
     </div>
     )

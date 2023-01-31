@@ -1,6 +1,11 @@
 {
   "private": true,
   "author": "ZhangWen <zhangwen1932@hotmail.com>",
+  "name": "huiwen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zhangwen1932/huiwen.git",
+  "license": "MIT",
   "scripts": {
     "dev": "max dev",
     "build": "max build",

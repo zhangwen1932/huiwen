@@ -9,7 +9,7 @@ export default defineConfig({
   request: {},
   layout: false,
   locale: {
-    default: 'zh_CN',
+    default: 'zh-CN',
     baseNavigator: true, // 为true时，用navigator.language的值作为默认语言
     antd: true, // 是否启用antd的<LocaleProvider />
     baseSeparator: '-',

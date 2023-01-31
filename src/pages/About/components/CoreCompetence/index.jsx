@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'umi';
 import { Row, Col } from 'antd';
 import { coreCompetenceText } from '../../static';
 import './styles.scss';
@@ -7,7 +8,7 @@ const CoreCompetence = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {coreCompetenceText.title}
+          <FormattedMessage id={coreCompetenceText.title} />
         </div>
         <div className="divided" />
         <div className="core-content">
@@ -19,10 +20,10 @@ const CoreCompetence = () => (
                     <img src={item.imgUrl} alt="" />
                   </div>
                   <div className="list-title">
-                    {item.title}
+                    <FormattedMessage id={item.title} />
                   </div>
                   <div className="list-desc">
-                    {item.desc}
+                    <FormattedMessage id={item.desc} />
                   </div>
                 </div>
               </Col>

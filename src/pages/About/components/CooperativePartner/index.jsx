@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'umi';
 import { Row, Col } from 'antd';
 import { cooperativePartnerText } from '../../static';
 
@@ -10,7 +11,7 @@ const CooperativePartner = () => {
       <div className="section-content section-padding">
         <div className="middle-value">
           <div className="title">
-            {cooperativePartnerText.title}
+            <FormattedMessage id={cooperativePartnerText.title} />
           </div>
           <div className="divided" />
           <div className="partner-content">

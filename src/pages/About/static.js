@@ -30,37 +30,37 @@ export const aboutText = {
 }
 
 export const coreCompetenceText = {
-  title: '汇文咨询四大核心能力',
+  title: 'about.core.title',
   content: [
     {
       id: 1,
-      title: '客观中立',
+      title: 'about.core.id1.title',
       imgUrl: './images/coreCompetence/objective.svg',
-      desc: '汇文咨询不隶属于任何海内外的金融机构，不代表任何在岸和离岸金融中心的政府机构。汇文咨询仅作为客户的内部顾问，助力客户家族茁壮成长。相比普通国内家族办公室，汇文咨询扮演了客户家族的“自家人”角色，对外保证客户家族的合规，独立性，对内仅提供专业意见，不参与决策。'
+      desc: 'about.core.id1.desc'
     }, 
     {
       id: 2,
-      title: '利益冲突',
+      title: 'about.core.id2.title',
       imgUrl: './images/coreCompetence/interest.svg',
-      desc: '汇文咨询不售卖任何产品来获取报酬，防止存在利益冲突的隐患。汇文咨询仅通过收取顾问费和管理费的模式实现可持续发展',
+      desc: 'about.core.id2.desc',
     },
     {
       id: 3,
-      title: '安全保密',
+      title: 'about.core.id3.title',
       imgUrl: './images/coreCompetence/safe.svg',
-      desc: '职业道德和行业操守是汇文咨询的坚持，汇文咨询把控服务的各个环节并严格遵守当地和国际的法律法规。根据最高标准的保密条例对客户的所有信息进行严格管理。',
+      desc: 'about.core.id3.desc',
     },
     {
       id: 4,
-      title: '优化控制',
+      title: 'about.core.id4.title',
       imgUrl: './images/coreCompetence/optimization.svg',
-      desc: '汇文咨询作为客户的内部顾问，在信托层面通过治理架构帮助客户,合规制衡受托机构，在运作实体层面同样帮助客户合规有效的控制家族资产的运作。',
+      desc: 'about.core.id4.desc',
     },
   ]
 }
 
 export const cooperativePartnerText = {
-  title: '合作伙伴',
+  title: 'about.partner.title',
   content: [
     {
       name: 'Intertrust 官网',

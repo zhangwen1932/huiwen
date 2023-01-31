@@ -1,4 +1,5 @@
-import { FormattedMessage} from 'umi';
+import { FormattedMessage, getLocale } from 'umi';
+import classnames from 'classnames';
 import { governanceText } from '../../static';
 import './styles.scss';
 
@@ -42,10 +43,10 @@ const Governance = () => {
           </div>
         <div className="governance-content">
           <div className="governance-list">
-            <div className="governance-row">
+            <div className={classnames(getLocale()==='zh-CN' ? "governance-row" : "governance-row-en")}>
               {renderRow(Row1)}
             </div>
-            <div className="governance-row">
+            <div className={classnames(getLocale()==='zh-CN' ? "governance-row" : "governance-row-en")}>
               {renderRow(Row2)}
             </div>
           </div>

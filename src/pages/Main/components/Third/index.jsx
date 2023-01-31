@@ -1,5 +1,6 @@
 import { Row, Col } from 'antd';
-import { FormattedMessage} from 'umi';
+import { FormattedMessage, getLocale } from 'umi';
+import classnames from 'classnames';
 import { thirdText } from '../../static';
 import './styles.scss';
 
@@ -23,7 +24,7 @@ const Third = () => (
               <Col className="third-list" md={6} sm={12} xs={12} key={item.id}>
                 <div className="third-item">
                   <div className="item-box">
-                    <div className="item-icon">
+                    <div className={classnames(getLocale()==='zh-CN' ? "item-icon":"item-icon-en")}>
                       <img src={item.imgUrl} alt="" />
                     </div>
                     <p>

@@ -1,63 +1,63 @@
 export const bannerText = {
-  title: '有自营，有委任',
-  subTitle: '主营业务',
-  desc: '把握核心业务，也可以代表客户接受委任提供全方位的服务',
+  title: 'main.banner.title',
+  subTitle: 'main.banner.subTitle',
+  desc: 'main.banner.desc',
   bg: './images/banner/main.jpg',
 }
 
 export const trustText = {
-  title: '信托类',
-  desc: '汇文咨询根据客户的长短期目标，结合信托成立地区的监管法规，为客户定制家族信托的整体架构并实施落地。整体架构的设计中，会涵盖客户家族的资产隔离，继承，受益人的法务和税务筹划等服务，主要涉及五个范畴：',
+  title: 'main.trust.title',
+  desc: 'main.trust.desc',
   content: [
     {
       imgUrl: './images/main/trust.svg',
       id: 1,
       elcontent: [
-        '信托架构',
-        '落地和运营',        
+        'main.trust.id1.elcontent.v1',
+        'main.trust.id1.elcontent.v2',        
       ]
     },
     {
       imgUrl: './images/main/law.svg',
       id: 2,
       elcontent: [
-        '法务税务',
-        '规划',        
+        'main.trust.id2.elcontent.v1',
+        'main.trust.id2.elcontent.v2',        
       ]
     },
     {
       imgUrl: './images/main/inherit.svg',
       id: 3,
       elcontent: [
-        '继承规划',       
+        'main.trust.id3.elcontent.v1',       
       ]
     },
     {
       imgUrl: './images/main/assets.svg',
       id: 4,
       elcontent: [
-        '资产隔离',   
-        '保全规划',    
+        'main.trust.id4.elcontent.v1',   
+        'main.trust.id4.elcontent.v2',    
       ]
     },
     {
       imgUrl: './images/main/contract.svg',
       id: 5,
       elcontent: [
-        '信托契约',   
-        '起草和审阅',    
+        'main.trust.id5.elcontent.v1',   
+        'main.trust.id5.elcontent.v2',    
       ]
     },
   ]
 }
 
 export const assetsText = {
-  title: '资产管理类',
-  desc: '汇文咨询目前在澳大利亚和新加坡持有金融牌照，中国地区的金融牌照也在筹备中。通过这些牌照赋能客户享受金融行业的同业待遇，满足监管方面的合规要求，以及最大程度地助力客户保持对资产管理的控制权和决策权。',
+  title: 'main.assets.title',
+  desc: 'main.assets.desc',
   license: [
-    '澳大利亚牌照：Polaris Australis Capital Pty Ltd (AFSL:544133)',
-    '新加坡牌照：和Privium Fund Management合作',
-    '中国牌照：南极星私募股权投资有限合伙(筹备中)'
+    'main.assets.license.id1',
+    'main.assets.license.id2',
+    'main.assets.license.id3'
   ],
   banner: [
     {
@@ -80,91 +80,91 @@ export const assetsText = {
 }
 
 export const governanceText = {
-  title: '企业治理',
-  desc: '汇文咨询深刻认识到家族信托管理是一个可持续发展的生态。需要有专业团队进行长期跟踪性服务，以便帮助客户进行对内对外的合规管理。内部有信托架构下实体的企业治理，内审，财务，风控管理等。外部有年度申报，定期和不定期的反洗钱治理和申报，税务，外审，合规申报等。汇文咨询通过专业团队确保客户在合规的情况下规避风险，平稳运行，提高效率，创造价值。主要包括以下服务范畴：',
+  title: 'main.governance.title',
+  desc: 'main.governance.desc',
   content: [
     {
       id: 1,
-      title: '公司顶层',
+      title: 'main.governance.content.id1.title',
       list: [
-        '企业章程草案',
-        '董事会决议和纪要',
-        '委员会组建',
-        '风险控制流程制定',
+        'main.governance.content.id1.list.v1',
+        'main.governance.content.id1.list.v2',
+        'main.governance.content.id1.list.v3',
+        'main.governance.content.id1.list.v4',
       ]
     },
     {
       id: 2,
-      title: '政府监管机构',
+      title: 'main.governance.content.id2.title',
       list: [
-        '合规年审',
-        '工商年度申报',
-        '税务申报'
+        'main.governance.content.id2.list.v1',
+        'main.governance.content.id2.list.v2',
+        'main.governance.content.id2.list.v3'
       ]
     },
     {
       id: 3,
-      title: '公司基层',
+      title: 'main.governance.content.id3.title',
       list: [
-        '财务规划',
-        '税务筹划',
-        '公司内审',
+        'main.governance.content.id3.list.v1',
+        'main.governance.content.id3.list.v2',
+        'main.governance.content.id3.list.v3',
       ]
     },
     {
       id:4,
-      title: '外部金融机构',
+      title: 'main.governance.content.id4.title',
       list: [
-        '反洗钱治理和申报',
-        '关键人士等变更申报'
+        'main.governance.content.id4.list.v1',
+        'main.governance.content.id4.list.v2'
       ]
     },
   ]
 }
 
 export const consultationText = {
-  title: '咨询类',
-  subTitle: '资本市场',
+  title: 'main.consultation.title',
+  subTitle: 'main.consultation.subTitle',
   imgUrl: './images/main/architecture.png',
-  desc: '汇文咨询通过尽职调查的方式帮助客户对其自行挖掘的投资项目做出判断，侧重于风险把控，可行性研究，现金流预测，估值模型建立，以及提前规划好未来上市的架构和路径。通过把控好当下，为客户的长期利益未雨绸缪。 ',
+  desc: 'main.consultation.desc',
   content: [
-    '一级市场运作，比如港股美股上市',
-    '二级市场运作，IPO股基石投资人',
-    '针对私募股权类项目投资，进行尽职调查'
+    'main.consultation.content.id1',
+    'main.consultation.content.id2',
+    'main.consultation.content.id3'
   ]
 }
 
 export const thirdText = {
-  title: '第三方业务',
-  desc: '客户家族运行所需要的服务范畴是全方位的，汇文咨询对于非主营业务的服务需求，将会转介绍给其他的第三方公司。或者，代表客户和其自行选择的第三方公司进行对接。',
+  title: 'main.third.title',
+  desc: 'main.third.desc',
   content: [{
     id: 1,
     imgUrl: './images/main/thirdOverseas.svg',
-    title: '境外物业'
+    title: 'main.third.conten.id1'
   }, {
     id: 2,
     imgUrl: './images/main/thirdMedical.svg',
-    title: '医疗服务'
+    title: 'main.third.conten.id2'
   }, {
     id: 3,
     imgUrl: './images/main/thirdImmigrant.svg',
-    title: '移民留学'
+    title: 'main.third.conten.id3'
   }, {
     id: 4,
     imgUrl: './images/main/thirdActive.svg',
-    title: '活动策划'
+    title: 'main.third.conten.id4'
   }, {
     id: 5,
     imgUrl: './images/main/thirdEdu.svg',
-    title: '教育实习'
+    title: 'main.third.conten.id5'
   }, {
     id: 6,
     imgUrl: './images/main/thirdDonate.svg',
-    title: '慈善捐赠'
+    title: 'main.third.conten.id6'
   }, {
     id: 7,
     imgUrl: './images/main/thirdTravel.svg',
-    title: '旅行管家'
+    title: 'main.third.conten.id7'
   }]
 }
 

@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd';
+import { FormattedMessage} from 'umi';
 import { thirdText } from '../../static';
 import './styles.scss';
 
@@ -7,12 +8,12 @@ const Third = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {thirdText.title}
+          <FormattedMessage id={thirdText.title} />
         </div>
         <div className="divided" />
         <div className="section-desc">
           <p>
-            {thirdText.desc}
+            <FormattedMessage id={thirdText.desc} />
           </p>
         </div>
         <div className="third-content">
@@ -25,7 +26,9 @@ const Third = () => (
                     <div className="item-icon">
                       <img src={item.imgUrl} alt="" />
                     </div>
-                    <p>{item.title}</p>
+                    <p>
+                      <FormattedMessage id={item.title} />
+                    </p>
                   </div>
                 </div>
               </Col>

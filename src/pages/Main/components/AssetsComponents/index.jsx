@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import { Row, Col, Carousel } from 'antd';
-import { assetsText } from '../../static';
 import { LeftOutlined, RightOutlined} from '@ant-design/icons';
+import { FormattedMessage } from 'umi';
+import { assetsText } from '../../static';
+
 import './styles.scss';
 
 const Assets = () => {
@@ -21,19 +23,21 @@ const Assets = () => {
       <div className="section-content section-padding">
         <div className="middle-value">
           <div className="title">
-            {assetsText.title}
+            <FormattedMessage id={assetsText.title} />
           </div>
           <div className="divided" />
           <div className="section-desc">
             <p>
-              {assetsText.desc}
+              <FormattedMessage id={assetsText.desc} />
             </p>
           </div>
           <div className="assets-content">
             <div className="assets-license">
               {
                 assetsText.license.map((item, index) => (
-                  <p key={index}>{item}</p>
+                  <p key={index}>
+                    <FormattedMessage id={item} />
+                  </p>
                 ))
               }
             </div>

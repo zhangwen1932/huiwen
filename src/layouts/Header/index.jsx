@@ -46,8 +46,8 @@ function Header() {
 
   const handleToggleLocale = () => {
     const toggleLocale = intls.find((item) => item.name !== getLocale());
-    // 后面的false代表的意思是切换时不刷新页面
-    setLocale(toggleLocale.name, false);
+    // 后面的false代表的意思是切换时刷新页面
+    setLocale(toggleLocale.name, true);
   };
   const currentLocale = intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
 

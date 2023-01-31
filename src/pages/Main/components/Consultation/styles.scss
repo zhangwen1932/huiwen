@@ -116,7 +116,7 @@
         border-radius: 50%;
       }
     }
-    .circle-dotted{
+    .circle-dotted-cn{
       height: 528px;
       width: 528px;
       position: absolute;
@@ -147,6 +147,39 @@
         position: absolute;
         top: 32px;
         left: 342px
+      }
+    }
+    .circle-dotted-en{
+      height: 528px;
+      width: 528px;
+      position: absolute;
+      z-index: 20;
+      left:50%;
+      top: 50%;
+      transform:translate(-50%, -50%);
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      .dotted{
+        width: 6px;
+        height: 6px;
+        background: #C42A26;
+        border-radius: 50%;
+      }
+      .dotted-1{
+        position: absolute;
+        top: 410px;
+        left: 67px;
+      }
+      .dotted-2{
+        position: absolute;
+        top: 69px;
+        left: 113px;
+      }
+      .dotted-3{
+        position: absolute;
+        top: 95px;
+        left: 437px
       }
     }
   }

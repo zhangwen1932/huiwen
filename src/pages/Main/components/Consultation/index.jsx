@@ -1,11 +1,15 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useRef } from 'react';
-import { consultationText } from '../../static';
+import { FormattedMessage, getLocale } from 'umi';
 import CircleType from "circletype";
+import classnames from 'classnames';
+
+import { consultationText } from '../../static';
 import './styles.scss';
 
 const Consultation = () => {
   const circleInstance = useRef();
+  console.log('getLocale', getLocale());
   useEffect(() => {
     new CircleType(circleInstance.current).radius(250);
   }, []);
@@ -13,12 +17,12 @@ const Consultation = () => {
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {consultationText.title}
+          <FormattedMessage id={consultationText.title} />
         </div>
         <div className="divided" />
         <div className="section-desc">
           <p>
-            {consultationText.desc}
+            <FormattedMessage id={consultationText.desc} />
           </p>
         </div>
         <div className="consultation-content">
@@ -26,7 +30,9 @@ const Consultation = () => {
             <div className="circle-text">
               <div className="img-box">
                 <img src={consultationText.imgUrl} alt=""/>
-                <p>{consultationText.subTitle}</p>
+                <p>
+                  <FormattedMessage id={consultationText.subTitle} />
+                </p>
               </div>
             </div>
             <div className="circle-front">
@@ -42,13 +48,13 @@ const Consultation = () => {
               <div className='circle' ref={circleInstance}>
                 {consultationText.content.map((item, index)=> 
                   <p key={index}>
-                    {item}
+                    <FormattedMessage id={item} />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                 )}
               </div>
             </div>
-            <div className="circle-dotted">
+            <div className={classnames(getLocale()==='zh-CN' ? "circle-dotted-cn" : "circle-dotted-en")}>
               <div className="dotted dotted-1"/>
               <div className="dotted dotted-2" />
               <div className="dotted dotted-3" />
@@ -58,7 +64,7 @@ const Consultation = () => {
             <div className="circle-desc">
               {consultationText.content.map((item, index)=> 
                 <p key={index}>
-                  {item}
+                  <FormattedMessage id={item} />
                 </p>
               )}
             </div>

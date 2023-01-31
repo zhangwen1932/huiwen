@@ -1,5 +1,4 @@
-import { Row, Col } from 'antd';
-import { render } from 'react-dom';
+import { FormattedMessage} from 'umi';
 import { governanceText } from '../../static';
 import './styles.scss';
 
@@ -12,11 +11,15 @@ const Governance = () => {
       data.map((item) => (
         <div className="row-ele" key={item.id}>
           <div className="row-position">
-            <div className="row-title">{item.title}</div>
+            <div className="row-title">
+              <FormattedMessage id={item.title} />
+            </div>
             <div className="row-list">{item.list.map((ele, index) => (
               <div key={index} className="list-ele">
                 <div className='dotted' />
-                <p>{ele}</p>
+                <p>
+                  <FormattedMessage id={ele} />
+                </p>
               </div>
             ))}</div>
           </div>
@@ -29,12 +32,12 @@ const Governance = () => {
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          {governanceText.title}
+          <FormattedMessage id={governanceText.title} />
         </div>
         <div className="divided" />
         <div className="section-desc">
             <p>
-              {governanceText.desc}
+              <FormattedMessage id={governanceText.desc} />
             </p>
           </div>
         <div className="governance-content">

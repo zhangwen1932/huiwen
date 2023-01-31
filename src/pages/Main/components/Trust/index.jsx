@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd';
+import { FormattedMessage } from 'umi';
 import { trustText } from '../../static';
 import './styles.scss';
 
@@ -7,12 +8,12 @@ const Trust = () => (
     <div className="section-content section-padding">
       <div className="middle-value">
         <div className="title">
-          { trustText.title}
+          <FormattedMessage id={trustText.title} />
         </div>
         <div className="divided" />
         <div className="section-desc">
           <p>
-            {trustText.desc}
+            <FormattedMessage id={trustText.desc} />
           </p>
         </div>
         <div className="trust-content">
@@ -24,7 +25,9 @@ const Trust = () => (
                 </div>
                 <div className="item-desc">
                   {item.elcontent.map((ele, index) => (
-                    <p key={index}>{ele}</p>
+                    <p key={index}>
+                      <FormattedMessage id={ele} />
+                    </p>
                   ))}
                 </div>
               </Col>

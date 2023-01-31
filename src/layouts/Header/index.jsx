@@ -70,13 +70,13 @@ function Header() {
       <div className="nav-box">
         <ul className="nav-ul">
           {navArray.map((item) => (
-            <li key={item.key} className="nav-li">
+            <li key={item.key} className={classnames(getLocale()==='zh-CN' ? "nav-li" : "nav-li-en")}>
               <NavLink className="nav-ele" to={item.test}>
                 {item.navTitle}
               </NavLink>
             </li>
           ))}
-          <li key="locale" className="nav-li">
+          <li key="locale" className={classnames(getLocale()==='zh-CN' ? "nav-li" : "nav-li-en")}>
             <a
               className="locale-btn"
               type="button"

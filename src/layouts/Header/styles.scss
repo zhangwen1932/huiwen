@@ -32,8 +32,13 @@
           justify-content: flex-end;
           margin-left: auto;
           .nav-li{
-            margin-left: 6%;
+            margin-left: 4%;
             min-width: 68px;
+            text-align: right;
+            font-family: PingFangSC, PingFangSC-Medium;
+          }
+          .nav-li-en{
+            margin-left: 4%;
             text-align: right;
             font-family: PingFangSC, PingFangSC-Medium;
           }
@@ -57,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav-container .header-wrapper{
     .header-right{
       display: none;

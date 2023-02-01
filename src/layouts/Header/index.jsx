@@ -95,7 +95,9 @@ function Header() {
     <section className="nav-container">
       <div className="header-wrapper section-padding">
         <div className="logo-box">
-          <img src="./images/logo/blackLogo.svg" alt="logo"/>
+          <NavLink to='/about'>
+            <img src="./images/logo/blackLogo.svg" alt="logo"/>
+          </NavLink>
         </div>
         <div className="header-right">
           {renderNav()}

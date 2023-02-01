@@ -44,7 +44,7 @@ const Assets = () => {
             <div className="assets-list">
               <Row>
                 <Col span={2}>
-                  <button type="button" className="left-arrow" onClick={handleNext}>
+                  <button type="button" className="left-arrow" onClick={handlePrev}>
                     <LeftOutlined />
                   </button>
                 </Col>
@@ -61,7 +61,7 @@ const Assets = () => {
                     </Carousel>
                 </Col>
                 <Col span={2}>
-                  <button type="button" className="right-arrow" onClick={handlePrev}>
+                  <button type="button" className="right-arrow" onClick={handleNext}>
                     <RightOutlined />
                   </button>
                 </Col>

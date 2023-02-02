@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Row, Col, Carousel } from 'antd';
 import { LeftOutlined, RightOutlined} from '@ant-design/icons';
-import { FormattedMessage } from 'umi';
+import { FormattedMessage, getLocale } from 'umi';
 import { assetsText } from '../../static';
 
 import './styles.scss';
@@ -18,6 +18,8 @@ const Assets = () => {
       carouselRef.current.next();
     }
   }
+  const { banner, bannerEn } = assetsText;
+  const carouselImg = getLocale() === 'zh-CN' ?  banner : bannerEn;
   return(
     <div className="section-item bg-gray">
       <div className="section-content section-padding">
@@ -53,7 +55,7 @@ const Assets = () => {
                       autoplay={true}
                       ref={carouselRef}
                     >
-                      {assetsText.banner.map((item) => (
+                      {carouselImg.map((item) => (
                         <div className="list-banner" key={item.id}>
                           <img src={item.imgUrl} alt="" />
                         </div>

@@ -61,22 +61,40 @@ export const assetsText = {
   ],
   banner: [
     {
-      imgUrl: './images/main/1.png',
+      imgUrl: './images/main/carousel/1.png',
       id: 1,
     }, 
     {
-      imgUrl: './images/main/2.png',
+      imgUrl: './images/main/carousel/2.png',
       id: 2,
     },
     {
-      imgUrl: './images/main/3.png',
+      imgUrl: './images/main/carousel/3.png',
       id: 3,
     },
     {
-      imgUrl: './images/main/4.png',
+      imgUrl: './images/main/carousel/4.png',
       id: 4,
     },
-  ]
+  ],
+  bannerEn: [
+    {
+      imgUrl: './images/main/carouselEn/1.png',
+      id: 1,
+    }, 
+    {
+      imgUrl: './images/main/carouselEn/2.png',
+      id: 2,
+    },
+    {
+      imgUrl: './images/main/carouselEn/3.png',
+      id: 3,
+    },
+    {
+      imgUrl: './images/main/carouselEn/4.png',
+      id: 4,
+    },
+  ],
 }
 
 export const governanceText = {

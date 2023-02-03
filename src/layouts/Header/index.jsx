@@ -5,7 +5,6 @@ import classnames from 'classnames';
 
 import './styles.scss';
 
-
 const intls = [
   {
     name: 'zh-CN',
@@ -42,14 +41,14 @@ function Header() {
       key: 'contact',
     },
   ];
-  
 
   const handleToggleLocale = () => {
     const toggleLocale = intls.find((item) => item.name !== getLocale());
     // 后面的false代表的意思是切换时刷新页面
     setLocale(toggleLocale.name, true);
   };
-  const currentLocale = intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
+  const currentLocale =
+    intls.find((item) => item.name.startsWith(getLocale())) || 'en-US';
 
   const handleShowMobileMenu = (e) => {
     setShowMobileMenu(!showMobileMenu);
@@ -66,17 +65,27 @@ function Header() {
   };
 
   const renderNav = () => {
-    return(
+    return (
       <div className="nav-box">
         <ul className="nav-ul">
           {navArray.map((item) => (
-            <li key={item.key} className={classnames(getLocale()==='zh-CN' ? "nav-li" : "nav-li-en")}>
+            <li
+              key={item.key}
+              className={classnames(
+                getLocale() === 'zh-CN' ? 'nav-li' : 'nav-li-en',
+              )}
+            >
               <NavLink className="nav-ele" to={item.test}>
                 {item.navTitle}
               </NavLink>
             </li>
           ))}
-          <li key="locale" className={classnames(getLocale()==='zh-CN' ? "nav-li" : "nav-li-en")}>
+          <li
+            key="locale"
+            className={classnames(
+              getLocale() === 'zh-CN' ? 'nav-li' : 'nav-li-en',
+            )}
+          >
             <a
               className="locale-btn"
               type="button"
@@ -85,32 +94,30 @@ function Header() {
               {currentLocale.title}
             </a>
           </li>
-      </ul>
-    </div>
-    )
-  }
-  
+        </ul>
+      </div>
+    );
+  };
 
   return (
     <section className="nav-container">
       <div className="header-wrapper section-padding">
         <div className="logo-box">
-          <NavLink to='/about'>
-            <img src="./images/logo/blackLogo.svg" alt="logo"/>
+          <NavLink to="/about">
+            <img src="./images/logo/blackLogo.svg" alt="logo" />
           </NavLink>
         </div>
-        <div className="header-right">
-          {renderNav()}
-        </div>
-        <div className={classnames('mobile-list', !showMobileMenu && "hidden")}>
+        <div className="header-right">{renderNav()}</div>
+        <div
+          className={classnames(
+            'mobile-list',
+            !showMobileMenu ? 'hidden' : 'show',
+          )}
+        >
           {renderNav()}
         </div>
         <div className="mobile-icon" onClick={(e) => handleShowMobileMenu(e)}>
-          {!showMobileMenu ? (
-            <MenuOutlined />
-          ) : (
-            <CloseOutlined />
-          )}
+          {!showMobileMenu ? <MenuOutlined /> : <CloseOutlined />}
         </div>
       </div>
     </section>

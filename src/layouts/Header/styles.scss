@@ -1,4 +1,4 @@
-.nav-container{
+.nav-container {
   width: 100%;
   position: relative;
   box-sizing: border-box;
@@ -15,11 +15,11 @@
       width: 25%;
       display: flex;
       align-items: center;
-      a{
+      a {
         display: block;
         height: 27px;
       }
-      img{
+      img {
         width: 72px;
         height: 27px;
         display: inline-block;
@@ -30,17 +30,17 @@
       padding-left: 31px;
       display: block;
       .nav-box {
-        .nav-ul{
+        .nav-ul {
           display: flex;
           align-items: center;
           justify-content: flex-end;
           margin-left: auto;
-          .nav-li{
+          .nav-li {
             margin-left: 4%;
             text-align: right;
             font-family: Arial, PingFangSC, PingFangSC-Medium;
           }
-          .nav-li-en{
+          .nav-li-en {
             margin-left: 4%;
             text-align: right;
             font-family: Arial, PingFangSC, PingFangSC-Medium;
@@ -50,15 +50,15 @@
           color: #2a2a2a;
           cursor: pointer;
         }
-        .active{
-          color: #C63632;
+        .active {
+          color: #c63632;
         }
       }
     }
     .mobile-icon {
       display: none;
     }
-  
+
     .mobile-list {
       display: none;
     }
@@ -66,17 +66,17 @@
 }
 
 @media screen and (max-width: 992px) {
-  .nav-container .header-wrapper{
-    .header-right{
+  .nav-container .header-wrapper {
+    .header-right {
       display: none;
     }
-    .mobile-icon{
+    .mobile-icon {
       width: 80%;
       display: block;
       text-align: right;
       font-size: 24px;
     }
-    .mobile-list{
+    .mobile-list {
       display: block;
       position: absolute;
       width: 100%;
@@ -85,23 +85,38 @@
       background-color: white;
       left: 0;
       .nav-box {
-        .nav-ul{
-          a{
+        .nav-ul {
+          a {
+            padding: 10px 0;
             display: inline-block;
             width: 100%;
             height: 42px;
             line-height: 42px;
           }
-          .active{
+          .active {
             width: 100%;
-            background-color: #C63632;;
+            background-color: #c63632;
             color: #fff;
           }
         }
       }
     }
-    .hidden{
+
+    .hidden {
       display: none;
     }
+    .show {
+      animation: slideDown 0.2s ease forwards;
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 212px;
   }
 }

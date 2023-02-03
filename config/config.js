@@ -8,6 +8,8 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: false,
+  base: '/hw/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   locale: {
     default: 'zh-CN',
     baseNavigator: true, // 为true时，用navigator.language的值作为默认语言
@@ -19,5 +21,5 @@ export default defineConfig({
   npmClient: 'yarn',
   title: '汇文',
   hash: true,
+  favicons: ['./favicon.ico'],
 });
-

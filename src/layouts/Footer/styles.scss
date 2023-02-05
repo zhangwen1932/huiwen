@@ -68,6 +68,19 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-wrapper{
+    height: fit-content;
+     .footer-content .other-info{
+      .contact-info{
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .footer-wrapper{
     height: fit-content;

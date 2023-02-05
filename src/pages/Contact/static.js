@@ -8,7 +8,7 @@ export const contactText = {
   title: 'contact.contact.title',
   content: {
     phone: {
-      info: '+61 401308770',
+      info: '+61 401 308 770',
       imgUrl: './images/contact/phone.svg',
     },
     email: {

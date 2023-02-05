@@ -7,8 +7,18 @@
       width: 210px;
       text-align: center;
       img{
-        width: 150px;
         height: 75px;
       }
     }
+}
+
+@media screen and (max-width: 576px) {
+  .correlation-content{
+    .list-img{
+      width: 150px;
+      img{
+        height: 54px;
+      }
+    }
+  }
 }

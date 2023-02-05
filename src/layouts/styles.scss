@@ -172,3 +172,12 @@ main{
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .section-padding{
+    padding: 0 5%;
+  }
+  .section-ele .section-content .middle-value {
+    padding: 12px;
+  }
+}

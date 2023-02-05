@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'umi';
+import { FormattedMessage, NavLink } from 'umi';
 import { footerText } from '../static'; 
 import { contactText, correlationText } from '../../pages/Contact/static';
 import './styles.scss';
@@ -10,7 +10,9 @@ export default function Footer() {
       <div className="section-padding">
         <div className="footer-content">
           <div className="logo">
-            <img src={footerText.logo} alt="black-logo" />
+            <NavLink to='/about'>
+              <img src={footerText.logo} alt="black-logo" />
+            </NavLink>
           </div>
           <div className="other-info">
             <div className="contact-info">

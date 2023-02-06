@@ -3,7 +3,7 @@ body,
 #root {
   // max-width: 1600px;
   height: 100%;
-  font-family: PingFangSC, PingFangSC-Medium;
+  font-family:  Arial, PingFangSC, PingFangSC-Medium;
   // min-width: 1200px;
   position: relative;
 }
@@ -16,7 +16,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Comfortaa;
+  font-family: Arial, Comfortaa;
   background-color: #fff;
   margin: 0;
 }
@@ -30,6 +30,7 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+  font-family: Arial, PingFangSC, PingFangSC-Medium;
 }
 
 h1,
@@ -110,7 +111,8 @@ main{
     .title{
       text-align: center;
       font-size: 18px;
-      font-family: PingFang SC;
+      font-family: Arial, PingFang SC;
+      font-family: Arial, PingFangSC, PingFangSC-Medium;
       font-weight: 500;
       color: #010101;
       position: relative;

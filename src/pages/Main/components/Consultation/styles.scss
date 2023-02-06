@@ -21,6 +21,7 @@
       align-items: center;
       justify-content: center;
       .img-box{
+        text-align: center;
         img{
           width: 64px;
           height: 63px;
@@ -104,6 +105,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Arial, PingFangSC, PingFangSC-Medium;
       .circle{
         display: flex;
         height: 500px;
@@ -168,18 +170,18 @@
       }
       .dotted-1{
         position: absolute;
-        top: 410px;
-        left: 67px;
+        top: 382px;
+        left: 49px;
       }
       .dotted-2{
         position: absolute;
-        top: 69px;
-        left: 113px;
+        top: 61px;
+        left: 123px;
       }
       .dotted-3{
         position: absolute;
-        top: 95px;
-        left: 437px
+        top: 90px;
+        left: 433px
       }
     }
   }

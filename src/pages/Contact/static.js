@@ -26,7 +26,7 @@ export const correlationText = {
   title: 'contact.correlation.title',
   content: [
     {
-      imgUrl: './images/contact/pac.png',
+      imgUrl: './images/contact/pac.svg',
       footerImgUrl: './images/footer/pac.png',
       id: 1,
       intro: '南极星资本'

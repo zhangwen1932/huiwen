@@ -42,6 +42,7 @@
 @media screen and (max-width: 992px) {
   .third-content{
     .third-list{
+      display: inline-block;
       .third-item{
         .item-box{
           display: flex;

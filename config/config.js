@@ -8,7 +8,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: false,
-  base: '/hw/',
+  base: process.env.NODE_ENV === 'production' ? '/hw/' : '/',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   locale: {
     default: 'zh-CN',

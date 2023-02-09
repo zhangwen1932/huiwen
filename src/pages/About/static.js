@@ -103,9 +103,9 @@ export const cooperativePartnerText = {
     {
       name: '汇丰银行',
       href: 'https://www.hsbc.com/',
-      imgUrl: './images/parnter/hsbcLogo.png',
+      imgUrl: './images/parnter/hsbcLogo.svg',
       id: 6,
-      width: '59px'
+      width: '127px'
     },
     {
       name: '新加坡银行',

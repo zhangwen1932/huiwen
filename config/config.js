@@ -8,8 +8,8 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: false,
-  base: process.env.NODE_ENV === 'production' ? '/hw/' : '/',
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   locale: {
     default: 'zh-CN',
     baseNavigator: true, // 为true时，用navigator.language的值作为默认语言

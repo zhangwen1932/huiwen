@@ -16,12 +16,33 @@ const Correlation = () => (
               <div className="list-img">
                 <img src={item.imgUrl} />
               </div>
+              <div className="list-item-description">
+                <div className="title">{item.content.title}</div>
+                <div className="address">
+                  <span className="icon">
+                    <img src="./images/contact/address.svg" />
+                  </span>
+                  <span>{item.content.address}</span>
+                </div>
+                <div className="phone">
+                  <span className="icon">
+                    <img src="./images/contact/phone.svg" />
+                  </span>
+                  {item.content.phone}
+                </div>
+                <div className="email">
+                  <span className="icon">
+                    <img src="./images/contact/email.svg" />
+                  </span>
+                  {item.content.email}
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
     </div>
   </div>
-)
+);
 
 export default Correlation;

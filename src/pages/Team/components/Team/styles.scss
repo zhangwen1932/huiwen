@@ -1,111 +1,122 @@
-.team-content{
-    margin-top: 86px;
-    .intro-box{
-      width: 100%;
-      padding: 0 16px;
-      box-sizing: border-box;
-      margin-bottom: 42px;
+.team-content {
+  margin-top: 86px;
+  .intro-box {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+  }
+  .list-item {
+    font-family: Arial, PingFang SC;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    width: 100%;
+  }
+  .list-position {
+    font-size: 12px;
+    color: #929292;
+    margin-top: 14px;
+  }
+  .list-divided {
+    // width: 479px;
+    width: 100%;
+    height: 1px;
+    background: #ececec;
+    margin-top: 20px;
+  }
+  .list-arrow {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #a2a2a2;
+    right: 10px;
+    top: 30px;
+    transition: all 0.1s;
+
+    &.open {
+      transform: rotate(90deg);
     }
-    .list-item{
-      font-size: 18px;
-      font-weight: 500;
-      text-align: left;
-      position: relative;
-      width: 100%;
-    }
-    .list-position{
-      font-size: 12px;
-      color: #929292;
-      margin-top: 14px;
-    }
-    .list-divided{
-      // width: 479px;
-      width: 100%;
-      height: 1px;
-      background: #ECECEC;
-      margin-top: 20px;
-    }
-    .list-arrow{
-      position: absolute;
-      right: 0;
-      font-size: 12px;
-      color: #a2a2a2;
-      right: 10px;
-      top: 30px;
-   }
-  .list-intro{
+  }
+  .list-intro {
     display: flex;
     justify-content: start;
     margin-top: 23px;
-    .list-author{
+    .list-author {
       width: 132px;
       height: 142px;
-      background: #EEEEEE;
+      background: #eeeeee;
       border-radius: 19px;
       overflow: hidden;
       flex-basis: 132px;
-      img{
+      img {
         width: 132px;
       }
     }
-    .list-info{
+    .list-info {
       flex: 1;
       text-align: left;
       padding-left: 36px;
       box-sizing: border-box;
-      .name{
+      .name {
         font-size: 14px;
         font-weight: 500;
       }
-      .position{
+      .position {
         font-size: 12px;
         font-family: Arial, PingFang SC;
         font-weight: 500;
         color: #929292;
         line-height: 18px;
-        margin-top: 14px;
-        span{
-          &:last-child{
-            margin-left: 10%;
-          }
+        margin-top: 12px;
+
+        span {
+          display: block;
         }
       }
-      .desc{
-        margin-top: 14px;
+      .desc {
+        margin-top: 12px;
         font-size: 12px;
         font-family: Arial, PingFang SC;
         font-weight: 500;
         color: #929292;
-        line-height: 18px
+        line-height: 18px;
       }
     }
-  }
-  .hidden{
-    display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .team-content{
-  .list-intro{
-    display: block;
-    .list-author{
-      width: 100%;
-      background: #EEEEEE;
-      border-radius: 19px;
-      overflow: hidden;
-      flex-basis: 132px;
-      img{
-        width: 132px;
+  .team-content {
+    .list-intro {
+      display: block;
+      .list-author {
+        width: 100%;
+        background: #eeeeee;
+        border-radius: 19px;
+        overflow: hidden;
+        flex-basis: 132px;
+        img {
+          width: 132px;
+        }
+      }
+      .list-info {
+        margin-top: 20px;
+        padding-left: 0;
+
+        .position span {
+          display: block;
+          margin-left: 0;
+        }
+        .position span:last-child {
+          margin-left: 0;
+        }
       }
     }
-    .list-info{
-      margin-top: 20px;
-      padding-left: 0;
+    .hidden {
+      display: none;
     }
   }
-  .hidden{
-    display: none;
-  }
-}
 }

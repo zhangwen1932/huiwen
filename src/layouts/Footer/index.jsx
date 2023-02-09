@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage, NavLink } from 'umi';
-import { footerText } from '../static'; 
+import { footerText } from '../static';
 import { contactText, correlationText } from '../../pages/Contact/static';
 import './styles.scss';
 
@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="section-padding">
         <div className="footer-content">
           <div className="logo">
-            <NavLink to='/about'>
+            <NavLink to="/about">
               <img src={footerText.logo} alt="black-logo" />
             </NavLink>
           </div>
@@ -20,19 +20,25 @@ export default function Footer() {
                 <div className="list-img">
                   <img src={contactText.content.phone.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.phone.info}</div>
+                <div className="list-info">
+                  {contactText.content.phone.info}
+                </div>
               </div>
               <div className="list-item" data-id="email">
                 <div className="list-img">
                   <img src={contactText.content.email.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.email.info}</div>
+                <div className="list-info">
+                  {contactText.content.email.info}
+                </div>
               </div>
               <div className="list-item" data-id="address">
                 <div className="list-img">
                   <img src={contactText.content.address.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.address.info}</div>
+                <div className="list-info">
+                  {contactText.content.address.info}
+                </div>
               </div>
             </div>
             <div className="relative-info">

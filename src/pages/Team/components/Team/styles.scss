@@ -70,15 +70,14 @@
         font-weight: 500;
         color: #929292;
         line-height: 18px;
-        margin-top: 14px;
+        margin-top: 12px;
+
         span {
-          &:last-child {
-            margin-left: 10%;
-          }
+          display: block;
         }
       }
       .desc {
-        margin-top: 14px;
+        margin-top: 12px;
         font-size: 12px;
         font-family: Arial, PingFang SC;
         font-weight: 500;
@@ -106,6 +105,14 @@
       .list-info {
         margin-top: 20px;
         padding-left: 0;
+
+        .position span {
+          display: block;
+          margin-left: 0;
+        }
+        .position span:last-child {
+          margin-left: 0;
+        }
       }
     }
     .hidden {

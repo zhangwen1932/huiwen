@@ -28,7 +28,9 @@ const Contact = () => (
                 <div className="list-img">
                   <img src={contactText.content.email.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.email.info}</div>
+                <div className="list-info">
+                  {contactText.content.email.info}
+                </div>
               </div>
             </Col>
             <Col sm={12} xs={24}>
@@ -36,7 +38,9 @@ const Contact = () => (
                 <div className="list-img">
                   <img src={contactText.content.address.imgUrl} alt="" />
                 </div>
-                <div className="list-info">{contactText.content.address.info}</div>
+                <div className="list-info">
+                  {contactText.content.address.info}
+                </div>
               </div>
             </Col>
           </Row>
@@ -44,6 +48,6 @@ const Contact = () => (
       </div>
     </div>
   </div>
-)
+);
 
 export default Contact;

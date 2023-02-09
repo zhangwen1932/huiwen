@@ -20,7 +20,7 @@
     "@ant-design/icons": "^4.8.0",
     "@umijs/max": "^4.0.46",
     "animate.css": "^4.1.1",
-    "antd": "^5.0.0",
+    "antd": "^5.2.0",
     "circletype": "^2.3.0",
     "classnames": "^2.3.2",
     "rc-queue-anim": "^2.0.0",

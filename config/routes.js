@@ -28,5 +28,5 @@ export default [
         component: '@/pages/Team',
       },
     ],
-  }
-]
+  },
+];

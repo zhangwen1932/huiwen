@@ -1,4 +1,5 @@
 export default {
+  'site.title': '汇文',
   'nav.about': '关于汇文',
   'nav.main': '主营业务',
   'nav.team': '核心团队',

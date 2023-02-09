@@ -1,4 +1,5 @@
 export default {
+  'site.title': 'Wyvern Advisory',
   'nav.about': 'ABOUT US',
   'nav.main': 'MAIN SERVICES',
   'nav.team': 'CORE TEAM',

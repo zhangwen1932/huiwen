@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Outlet, useLocation } from 'umi';
+import { Outlet, useIntl, useLocation } from 'umi';
 import { Layout } from 'antd';
 import HeaderComponent from './Header';
 import FooterComponent from './Footer';
@@ -11,6 +11,11 @@ const { Header, Content, Footer } = Layout;
 
 const LayoutComponent = () => {
   const { pathname } = useLocation();
+  const intl = useIntl();
+
+  useEffect(() => {
+    document.title = intl.formatMessage({ id: 'site.title' });
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
